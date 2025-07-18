@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md fixed-top">
-  <div class="container-fluid d-flex justify-content-center">
+  <div class="container-fluid">
     <button
-      class="navbar-toggler"
+      class="navbar-toggler mx-auto"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent"
@@ -16,91 +16,100 @@
       class="collapse navbar-collapse"
       id="navbarSupportedContent"
     >
-      <!--Logo-->
-      <div
-        class="logo-container txt-primary-green d-flex justify-content-center align-items-center"
-      >
-        <a class="navbar-brand" [routerLink]="['']" (click)="collapseNavbar()">
-          <img
-            src="assets/logo/logo_basic.png"
-            alt="Logo"
-            class="logo-image img-fluid"
-          />
-        </a>
-        <p class="txt-md m-0">
-          Nagy Bence e.v. |
-          <button class="button-primary" (click)="changeLanguage()">
-            <p class="txt-md txt-primary-green p-0 m-0">
-              {{ changeToLangValue }}
-            </p>
-          </button>
-        </p>
-      </div>
-      <!--Links-->
-      <hr class="txt-primary-green" />
-      <ul class="navbar-nav navbar-links ms-auto me-auto mb-lg-0">
-        <!--Introduction-->
-        <li class="nav-item">
+      <div class="navbar-inner-content">
+        <!--Logo-->
+        <div
+          class="logo-container txt-primary-green d-flex justify-content-center align-items-center"
+        >
           <a
-            class="nav-link active"
-            aria-current="page"
+            class="navbar-brand"
             [routerLink]="['']"
-            fragment="Introduction"
             (click)="collapseNavbar()"
           >
-            <button class="button-primary">
-              <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
-                {{ "INTRODUCTION_BUTTON" | translate }}
+            <img
+              src="assets/logo/logo_basic.png"
+              alt="Logo"
+              class="logo-image img-fluid"
+            />
+          </a>
+          <p class="txt-md m-0">
+            Nagy Bence e.v. |
+            <button class="button-primary" (click)="changeLanguage()">
+              <p class="txt-md txt-primary-green p-0 m-0">
+                {{ changeToLangValue }}
               </p>
             </button>
-          </a>
-        </li>
+          </p>
+        </div>
+        <!--Links-->
+        <hr class="txt-primary-green" />
+        <div>
+          <ul class="navbar-nav navbar-links mb-lg-0">
+            <!--Introduction-->
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                [routerLink]="['']"
+                fragment="Introduction"
+                (click)="collapseNavbar()"
+              >
+                <button class="button-primary">
+                  <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
+                    {{ "INTRODUCTION_BUTTON" | translate }}
+                  </p>
+                </button>
+              </a>
+            </li>
 
-        <!--References-->
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            [routerLink]="['']"
-            fragment="References"
-            (click)="collapseNavbar()"
-            ><button class="button-primary">
-              <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
-                {{ "REFERENCES_BUTTON" | translate }}
-              </p>
-            </button></a
-          >
-        </li>
+            <!--References-->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                [routerLink]="['']"
+                fragment="References"
+                (click)="collapseNavbar()"
+                ><button class="button-primary">
+                  <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
+                    {{ "REFERENCES_BUTTON" | translate }}
+                  </p>
+                </button></a
+              >
+            </li>
 
-        <!--Pricing-->
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            [routerLink]="['']"
-            fragment="Pricing"
-            (click)="collapseNavbar()"
-            ><button class="button-primary">
-              <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
-                {{ "PRICING_BUTTON" | translate }}
-              </p>
-            </button></a
-          >
-        </li>
+            <!--Pricing-->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                [routerLink]="['']"
+                fragment="Pricing"
+                (click)="collapseNavbar()"
+                ><button class="button-primary">
+                  <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
+                    {{ "PRICING_BUTTON" | translate }}
+                  </p>
+                </button></a
+              >
+            </li>
 
-        <!--Contact-->
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            [routerLink]="['']"
-            fragment="Contact"
-            (click)="collapseNavbar()"
-            ><button class="button-primary">
-              <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
-                {{ "CONTACT_BUTTON" | translate }}
-              </p>
-            </button></a
-          >
-        </li>
-      </ul>
+            <!--Contact-->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                [routerLink]="['']"
+                fragment="Contact"
+                (click)="collapseNavbar()"
+                ><button class="button-primary">
+                  <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
+                    {{ "CONTACT_BUTTON" | translate }}
+                  </p>
+                </button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <hr />
     </div>
   </div>

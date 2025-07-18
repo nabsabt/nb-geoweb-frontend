@@ -47,6 +47,17 @@ body{
   --mobile-navbar-height: 75px;
   --desktop-navbar-height: 100px;
 }
+.txt-font-light{
+  font-weight: var(--font-weight-light);
+}
+
+.txt-font-medium{
+  font-weight: var(--font-weight-medium);
+}
+
+.txt-font-bold{
+  font-weight: var(--font-weight-bold);
+}
 
 .txt-primary-green {
   color: var(--primary-green);
@@ -113,7 +124,7 @@ body{
     height: 100vh;  /* Fix the body to always cover the full viewport */
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent scrolling on body */
+    //overflow: hidden; /* Prevent scrolling on body */
   }
   body {
     background-color: var(--primary-dark);
@@ -126,7 +137,7 @@ body{
     height: 100vh;  /* Fix the body to always cover the full viewport */
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent scrolling on body */
+    //overflow: hidden; /* Prevent scrolling on body */
   }
   body{
   background-color: var(--primary-dark);

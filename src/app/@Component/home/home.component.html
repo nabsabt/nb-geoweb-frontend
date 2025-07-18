@@ -1,3 +1,84 @@
-<div class="home-container">
-  <h1>Home</h1>
+<div class="home-container container">
+  <!--Hero section-->
+  <div class="hero-section section">
+    <p class="hero-title txt-huge txt-primary-green txt-font-bold">
+      {{ "HERO_SECTION_TITLE" | translate }}
+    </p>
+    <p class="hero-subtitle txt-md txt-primary-green">
+      {{ "HERO_SECTION_SUBTITLE" | translate }}
+    </p>
+  </div>
+
+  <!--Introduction section-->
+  <div #Introduction id="Introduction" class="introduction-section section">
+    <p class="introduction-title txt-huge txt-primary-light">
+      {{ "INTRO_SECTION_TITLE" | translate }}
+    </p>
+    <div class="section-content">
+      <div class="text">
+        <p class="introduction-subtitle txt-sm txt-secondary-light">
+          {{ "INTRO_SECTION_SUBTITLE" | translate }}
+        </p>
+      </div>
+      <div class="graphics">
+        <img
+          class="intro-graphic"
+          src="https://static.vecteezy.com/system/resources/previews/006/477/596/non_2x/horizontal-children-s-map-with-roads-cars-buildings-vector.jpg"
+          alt="Introduction Graphic"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!--References section-->
+  <div #References id="References" class="references-section section">
+    <p class="references-title txt-huge txt-primary-light">
+      {{ "REFERENCES_SECTION_TITLE" | translate }}
+    </p>
+    <div class="section-content">
+      <div class="text">
+        <p class="references-subtitle txt-sm txt-secondary-light">
+          {{ "REFERENCES_SECTION_SUBTITLE" | translate }}
+        </p>
+      </div>
+      <div class="graphics">
+        <img
+          class="ref-graphic"
+          src="https://static.vecteezy.com/system/resources/previews/006/477/596/non_2x/horizontal-children-s-map-with-roads-cars-buildings-vector.jpg"
+          alt="Introduction Graphic"
+        />
+      </div>
+    </div>
+    <!-- <p class="references-subtitle txt-sm txt-secondary-light">
+      {{ "REFERENCES_SECTION_SUBTITLE" | translate }}
+    </p> -->
+  </div>
+
+  <!--Prices section-->
+  <div #Pricing id="Pricing" class="prices-section section">
+    <p class="prices-title txt-huge txt-primary-light">
+      {{ "PRICES_SECTION_TITLE" | translate }}
+    </p>
+    <div class="section-content">
+      <div class="text">
+        <p class="prices-subtitle txt-sm txt-secondary-light">
+          {{ "PRICES_SECTION_SUBTITLE" | translate }}
+        </p>
+      </div>
+      <div class="graphics">
+        <img
+          class="price-graphic"
+          src="https://static.vecteezy.com/system/resources/previews/006/477/596/non_2x/horizontal-children-s-map-with-roads-cars-buildings-vector.jpg"
+          alt="Introduction Graphic"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!--Contact section-->
+  <div #Contact id="Contact" class="contact-section section">
+    <p class="contact-title txt-huge txt-primary-light">
+      {{ "CONTACT_SECTION_TITLE" | translate }}
+    </p>
+  </div>
 </div>

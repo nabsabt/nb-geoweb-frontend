@@ -29,7 +29,11 @@
         </a>
         <p class="txt-md m-0">
           Nagy Bence e.v. |
-          <a class="txt-md" style="text-decoration: none">en</a>
+          <button class="button-primary" (click)="changeLanguage()">
+            <p class="txt-md txt-primary-green p-0 m-0">
+              {{ changeToLangValue }}
+            </p>
+          </button>
         </p>
       </div>
       <!--Links-->
@@ -46,7 +50,7 @@
           >
             <button class="button-primary">
               <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
-                Introduction
+                {{ "INTRODUCTION_BUTTON" | translate }}
               </p>
             </button>
           </a>
@@ -61,7 +65,7 @@
             (click)="collapseNavbar()"
             ><button class="button-primary">
               <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
-                References
+                {{ "REFERENCES_BUTTON" | translate }}
               </p>
             </button></a
           >
@@ -76,7 +80,7 @@
             (click)="collapseNavbar()"
             ><button class="button-primary">
               <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
-                Pricing
+                {{ "PRICING_BUTTON" | translate }}
               </p>
             </button></a
           >
@@ -91,7 +95,7 @@
             (click)="collapseNavbar()"
             ><button class="button-primary">
               <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
-                Contact
+                {{ "CONTACT_BUTTON" | translate }}
               </p>
             </button></a
           >

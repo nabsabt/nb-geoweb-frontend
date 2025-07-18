@@ -1,1 +1,135 @@
-/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+body{
+  font-family: 'Inter'
+}
+
+//COLORS
+:root {
+  --primary-green: #24B66F;
+  --primary-dark: #101010;
+  --primary-light: #D0D0D0;
+  --secondary-light: #8E8E8E;
+
+
+  /* Font */
+  --font-family: 'Inter', sans-serif;
+  --font-size-sm: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 24px;
+  --font-size-huge: 36px;
+
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+   /* Viewport sizes */
+  --mobile-max-viewport: 700px;
+  --desktop-min-viewport: 701px;
+
+  /* Navbar height */
+  --mobile-navbar-height: 75px;
+  --desktop-navbar-height: 100px;
+}
+
+.txt-primary-green {
+  color: var(--primary-green);
+}
+.txt-primary-dark {
+  color: var(--primary-dark);
+}
+.txt-primary-light {
+  color: var(--primary-light);
+}
+.txt-secondary-light {
+  color: var(--secondary-light);
+}
+
+.bg-primary-green {
+  background-color: var(--primary-green);
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+.bg-primary-light {
+  background-color: var(--primary-light);
+}
+.bg-secondary-light {
+  background-color: var(--secondary-light);
+}
+
+.txt-sm{
+  font-size: var(--font-size-sm);
+}
+.txt-md{
+  font-size: var(--font-size-md);
+}
+.txt-lg{
+  font-size: var(--font-size-lg);
+}
+.txt-huge{
+  font-size: var(--font-size-huge);
+}
+
+.button-primary {
+
+  background-color: var(--primary-dark);
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+  transition: border 0.2s ease, box-shadow 0.2s ease; // optional
+}
+
+.button-primary:hover {
+  border: 1px solid inset var(--primary-green); // 👈 this creates the "stroke"
+  box-shadow: 0 0 0 1px var(--primary-green); // optional soft outline effect
+}
+
+.button-primary:active {
+  border: 1px solid inset var(--primary-light); // ✅ Correct
+  box-shadow: 0 0 0 1px var(--primary-light); // Optional outline
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width: 767px){
+  html, body {
+    height: 100vh;  /* Fix the body to always cover the full viewport */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling on body */
+  }
+  body {
+    background-color: var(--primary-dark);
+  }
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 766px){
+  html, body {
+    height: 100vh;  /* Fix the body to always cover the full viewport */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling on body */
+  }
+  body{
+  background-color: var(--primary-dark);
+
+  }
+}

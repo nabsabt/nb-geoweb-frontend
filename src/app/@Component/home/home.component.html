@@ -34,14 +34,20 @@
         </p>
       </div>
       <div class="graphics">
-        <img
-          class="intro-graphic"
-          src="https://static.vecteezy.com/system/resources/previews/006/477/596/non_2x/horizontal-children-s-map-with-roads-cars-buildings-vector.jpg"
-          alt="Introduction Graphic"
-        />
+        <om-map
+          [dots]="dots"
+          [lineColor]="'#d0d0d0'"
+          [mapColor]="'#24b66f'"
+          [animated]="true"
+        ></om-map>
       </div>
     </div>
   </div>
+
+  <om-neon-underline
+    [middleColor]="'#24b66f'"
+    [sideColor]="'#9ee8df'"
+  ></om-neon-underline>
 
   <!--References section-->
   <div #References id="References" class="container references-section section">
@@ -55,15 +61,43 @@
         </p>
       </div>
       <div class="graphics">
-        <img
-          class="ref-graphic"
-          src="https://static.vecteezy.com/system/resources/previews/006/477/596/non_2x/horizontal-children-s-map-with-roads-cars-buildings-vector.jpg"
-          alt="Introduction Graphic"
-        />
+        <om-marquee>
+          <ng-template>
+            <a
+              href="https://nsekszer.hu/"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <div class="card">
+                <p>NS Ékszer</p>
+              </div>
+            </a>
+          </ng-template>
+          <ng-template>
+            <a
+              href="https://koliapp-frontend.onrender.com"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <div class="card">
+                <p>KoliApp</p>
+              </div>
+            </a>
+          </ng-template>
+          <ng-template>
+            <div class="card">
+              <p>Sentinels</p>
+            </div>
+          </ng-template>
+        </om-marquee>
       </div>
     </div>
   </div>
 
+  <om-neon-underline
+    [middleColor]="'#24b66f'"
+    [sideColor]="'#9ee8df'"
+  ></om-neon-underline>
   <!--Prices section-->
   <div #Pricing id="Pricing" class="container prices-section section">
     <p class="prices-title txt-huge txt-primary-light">
@@ -78,17 +112,133 @@
       <div class="graphics">
         <img
           class="price-graphic"
-          src="https://static.vecteezy.com/system/resources/previews/006/477/596/non_2x/horizontal-children-s-map-with-roads-cars-buildings-vector.jpg"
+          src="assets/img/pricing-image.png"
           alt="Introduction Graphic"
         />
       </div>
     </div>
   </div>
 
+  <om-neon-underline
+    [middleColor]="'#24b66f'"
+    [sideColor]="'#9ee8df'"
+  ></om-neon-underline>
   <!--Contact section-->
   <div #Contact id="Contact" class="container contact-section section">
     <p class="contact-title txt-huge txt-primary-light">
       {{ "CONTACT_SECTION_TITLE" | translate }}
     </p>
+    <div class="section-content">
+      <div class="text">
+        <p class="contact-subtitle txt-sm txt-secondary-light">
+          {{ "CONTACT_SECTION_TEXT" | translate }}
+        </p>
+      </div>
+      <div class="graphics d-flex justify-content-center align-items-center">
+        <a href="mailto:nabsabt@gmail.com" title="Send an email">
+          <svg
+            class="mx-2"
+            width="40px"
+            height="40px"
+            viewBox="0 -2.5 20 20"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            fill="#24B66F"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+
+            <g id="SVGRepo_iconCarrier">
+              <title>email [#1572]</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g
+                  id="Dribbble-Light-Preview"
+                  transform="translate(-340.000000, -922.000000)"
+                  fill="#24B66F"
+                >
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path
+                      d="M294,774.474 L284,765.649 L284,777 L304,777 L304,765.649 L294,774.474 Z M294.001,771.812 L284,762.981 L284,762 L304,762 L304,762.981 L294.001,771.812 Z"
+                      id="email-[#1572]"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+
+        <a href="https://www.facebook.com/bence.nagy.1675" target="_blank">
+          <svg
+            class="mx-2"
+            width="40px"
+            height="40px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z"
+                fill="#24B66F"
+              />
+            </g>
+          </svg>
+        </a>
+
+        <a href="tel:+36123456789" title="+36309940002">
+          <svg
+            class="mx-2"
+            width="40px"
+            height="40px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+
+            <g id="SVGRepo_iconCarrier">
+              <rect width="24" height="24" fill="none" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M2.14089 4.4021C2.34025 2.92963 3.63956 2 4.99004 2H7.55848C8.84977 2 9.99619 2.82629 10.4045 4.05132L11.454 7.19963C11.905 8.55283 11.1086 10.0036 9.72482 10.3496C9.38646 10.4342 9.26975 10.8555 9.51637 11.1022L12.8978 14.4836C13.1445 14.7303 13.5658 14.6135 13.6504 14.2752C13.9964 12.8914 15.4472 12.095 16.8004 12.546L19.9487 13.5955C21.1737 14.0038 22 15.1502 22 16.4415V19.01C22 20.3604 21.0704 21.6598 19.5979 21.8591C18.9114 21.9521 18.211 22 17.5 22C8.93959 22 2 15.0604 2 6.5C2 5.78898 2.04794 5.08863 2.14089 4.4021Z"
+                fill="#24B66F"
+              />
+            </g>
+          </svg>
+        </a>
+
+        <p class="phone-number txt-primary-green m-0 p-0">+36309940002</p>
+      </div>
+    </div>
   </div>
 </div>

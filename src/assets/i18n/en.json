@@ -11,10 +11,12 @@
   "INTRO_SECTION_SUBTITLE": "I have several years of experience in web development, and I believe in providing tailored solutions for every client. My main focus is developing web-based mapping applications, so I offer not only custom website development but also the visualization of spatial data in a web environment.",
 
   "REFERENCES_SECTION_TITLE": "References",
-  "REFERENCES_SECTION_SUBTITLE": "As a freelancer, I have worked on various projects. Feel free to take a look at some of my notable works.",
+  "REFERENCES_SECTION_SUBTITLE": "As a freelancer, I have worked on various projects. Many of those are not just published websites, but GIS projects with purpose of decision making. Feel free to take a look at some of my notable, publicly available projects.",
 
   "PRICES_SECTION_TITLE": "Pricing",
   "PRICES_SECTION_SUBTITLE": "I offer competitive pricing for my services, ensuring that you get the best value for your investment. Contact me to discuss your project and get a personalized quote.",
 
-  "CONTACT_SECTION_TITLE": "Contact"
+  "CONTACT_SECTION_TITLE": "Contact",
+    "CONTACT_SECTION_TEXT": "Already have a concept, just need a professional to help shape it? Got an idea, but not sure how to bring it to life? Get in touch through any of my contact channels!"
+
 }

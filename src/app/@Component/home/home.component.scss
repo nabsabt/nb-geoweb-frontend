@@ -17,7 +17,6 @@
       }
       .graphics {
         flex: 1;
-        text-align: right;
       }
     }
   }
@@ -27,9 +26,12 @@
 @media only screen and (min-width: 701px) {
   .home-container {
     margin-top: var(--desktop-navbar-height);
-    img {
-      width: 400px;
-      height: 200px;
+
+    .graphics {
+      max-width: 50%;
+      img {
+        max-width: 100%;
+      }
     }
   }
 }
@@ -49,10 +51,28 @@
       p {
         text-align: left;
       }
-      img {
-        width: 200px;
-        height: 200px;
+      .graphics {
+        width: 100%;
+        img {
+          max-width: 80%;
+        }
+      }
+      .phone-number {
+        display: none;
       }
     }
+
+    .contact-section {
+      height: 300px;
+    }
   }
+}
+
+//CARD style
+.card {
+  border-radius: 0.75rem;
+  border: 1px solid var(--primary-green);
+  padding: 2rem;
+  background-color: var(--primary-dark);
+  color: var(--primary-green);
 }

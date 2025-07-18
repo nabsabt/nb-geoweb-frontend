@@ -1,45 +1,41 @@
 @import "bootstrap/scss/bootstrap";
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/assets/fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Italic-VariableFont_opsz,wght.ttf")
+    format("truetype");
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
 }
 
-body{
-  font-family: 'Inter'
+body {
+  font-family: "Inter";
 }
 
 //COLORS
 :root {
-  --primary-green: #24B66F;
+  --primary-green: #24b66f;
   --primary-dark: #101010;
-  --primary-light: #D0D0D0;
-  --secondary-light: #8E8E8E;
-
+  --primary-light: #d0d0d0;
+  --secondary-light: #8e8e8e;
 
   /* Font */
-  --font-family: 'Inter', sans-serif;
+  --font-family: "Inter", sans-serif;
   --font-size-sm: 16px;
   --font-size-md: 18px;
   --font-size-lg: 24px;
   --font-size-huge: 36px;
 
-  --font-weight-light: 300;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700;
-
-   /* Viewport sizes */
+  /* Viewport sizes */
   --mobile-max-viewport: 700px;
   --desktop-min-viewport: 701px;
 
@@ -47,61 +43,60 @@ body{
   --mobile-navbar-height: 75px;
   --desktop-navbar-height: 100px;
 }
-.txt-font-light{
-  font-weight: var(--font-weight-light);
+.txt-font-light {
+  font-weight: 300;
 }
 
-.txt-font-medium{
-  font-weight: var(--font-weight-medium);
+.txt-font-medium {
+  font-weight: 500;
 }
 
-.txt-font-bold{
-  font-weight: var(--font-weight-bold);
+.txt-font-bold {
+  font-weight: 700;
 }
 
 .txt-primary-green {
-  color: var(--primary-green);
+  color: #24b66f;
 }
 .txt-primary-dark {
-  color: var(--primary-dark);
+  color: #101010;
 }
 .txt-primary-light {
-  color: var(--primary-light);
+  color: #d0d0d0;
 }
 .txt-secondary-light {
-  color: var(--secondary-light);
+  color: #8e8e8e;
 }
 
 .bg-primary-green {
-  background-color: var(--primary-green);
+  background-color: #24b66f;
 }
 
 .bg-primary-dark {
-  background-color: var(--primary-dark);
+  background-color: #101010;
 }
 .bg-primary-light {
-  background-color: var(--primary-light);
+  background-color: #d0d0d0;
 }
 .bg-secondary-light {
-  background-color: var(--secondary-light);
+  background-color: #8e8e8e;
 }
 
-.txt-sm{
-  font-size: var(--font-size-sm);
+.txt-sm {
+  font-size: 16px;
 }
-.txt-md{
-  font-size: var(--font-size-md);
+.txt-md {
+  font-size: 18px;
 }
-.txt-lg{
-  font-size: var(--font-size-lg);
+.txt-lg {
+  font-size: 24px;
 }
-.txt-huge{
-  font-size: var(--font-size-huge);
+.txt-huge {
+  font-size: 36px;
 }
 
 .button-primary {
-
-  background-color: var(--primary-dark);
+  background-color: #101010;
   margin: 0;
   border: none;
   border-radius: 5px;
@@ -109,38 +104,39 @@ body{
 }
 
 .button-primary:hover {
-  border: 1px solid inset var(--primary-green); // 👈 this creates the "stroke"
-  box-shadow: 0 0 0 1px var(--primary-green); // optional soft outline effect
+  border: 1px solid inset #24b66f; // 👈 this creates the "stroke"
+  box-shadow: 0 0 0 1px #24b66f; // optional soft outline effect
 }
 
 .button-primary:active {
-  border: 1px solid inset var(--primary-light); // ✅ Correct
-  box-shadow: 0 0 0 1px var(--primary-light); // Optional outline
+  border: 1px solid inset #d0d0d0; // ✅ Correct
+  box-shadow: 0 0 0 1px #d0d0d0; // Optional outline
 }
 
 /* DESKTOP VIEW */
-@media only screen and (min-width: 767px){
-  html, body {
-    height: 100vh;  /* Fix the body to always cover the full viewport */
+@media only screen and (min-width: 767px) {
+  html,
+  body {
+    height: 100vh; /* Fix the body to always cover the full viewport */
     margin: 0;
     padding: 0;
     //overflow: hidden; /* Prevent scrolling on body */
   }
   body {
-    background-color: var(--primary-dark);
+    background-color: #101010;
   }
 }
 
 /* MOBILE VIEW */
-@media only screen and (max-width: 766px){
-  html, body {
-    height: 100vh;  /* Fix the body to always cover the full viewport */
+@media only screen and (max-width: 766px) {
+  html,
+  body {
+    height: 100vh; /* Fix the body to always cover the full viewport */
     margin: 0;
     padding: 0;
     //overflow: hidden; /* Prevent scrolling on body */
   }
-  body{
-  background-color: var(--primary-dark);
-
+  body {
+    background-color: #101010;
   }
 }

@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { NgxVortexComponent } from '@omnedia/ngx-vortex';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule, NgxVortexComponent],
   providers: [TranslateService],
 })
 export class HomeComponent implements OnInit {

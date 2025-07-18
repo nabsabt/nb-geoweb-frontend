@@ -1,16 +1,29 @@
-<div class="home-container container">
+<div class="home-container">
   <!--Hero section-->
-  <div class="hero-section section">
-    <p class="hero-title txt-huge txt-primary-green txt-font-bold">
-      {{ "HERO_SECTION_TITLE" | translate }}
-    </p>
-    <p class="hero-subtitle txt-md txt-primary-green">
-      {{ "HERO_SECTION_SUBTITLE" | translate }}
-    </p>
+  <div class="hero-section">
+    <om-vortex
+      class="vortex"
+      [firstGradientColors]="['#105735', '#0b3d25']"
+      [secondGradientColors]="['#044f2b', '#03331c']"
+      [waveAmount]="24"
+    >
+      <div class="hero-section-content container">
+        <p class="hero-title txt-huge txt-primary-green txt-font-bold">
+          {{ "HERO_SECTION_TITLE" | translate }}
+        </p>
+        <p class="hero-subtitle txt-md txt-primary-green">
+          {{ "HERO_SECTION_SUBTITLE" | translate }}
+        </p>
+      </div>
+    </om-vortex>
   </div>
 
   <!--Introduction section-->
-  <div #Introduction id="Introduction" class="introduction-section section">
+  <div
+    #Introduction
+    id="Introduction"
+    class="container introduction-section section"
+  >
     <p class="introduction-title txt-huge txt-primary-light">
       {{ "INTRO_SECTION_TITLE" | translate }}
     </p>
@@ -31,7 +44,7 @@
   </div>
 
   <!--References section-->
-  <div #References id="References" class="references-section section">
+  <div #References id="References" class="container references-section section">
     <p class="references-title txt-huge txt-primary-light">
       {{ "REFERENCES_SECTION_TITLE" | translate }}
     </p>
@@ -49,13 +62,10 @@
         />
       </div>
     </div>
-    <!-- <p class="references-subtitle txt-sm txt-secondary-light">
-      {{ "REFERENCES_SECTION_SUBTITLE" | translate }}
-    </p> -->
   </div>
 
   <!--Prices section-->
-  <div #Pricing id="Pricing" class="prices-section section">
+  <div #Pricing id="Pricing" class="container prices-section section">
     <p class="prices-title txt-huge txt-primary-light">
       {{ "PRICES_SECTION_TITLE" | translate }}
     </p>
@@ -76,7 +86,7 @@
   </div>
 
   <!--Contact section-->
-  <div #Contact id="Contact" class="contact-section section">
+  <div #Contact id="Contact" class="container contact-section section">
     <p class="contact-title txt-huge txt-primary-light">
       {{ "CONTACT_SECTION_TITLE" | translate }}
     </p>

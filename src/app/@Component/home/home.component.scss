@@ -6,6 +6,13 @@
   }
   .section {
     height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .title {
+      display: none;
+      text-align: center;
+    }
     .section-content {
       display: flex;
       justify-content: space-between;

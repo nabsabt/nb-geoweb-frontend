@@ -1,6 +1,7 @@
 {
   "INTRODUCTION_BUTTON": "Bemutatkozás",
   "REFERENCES_BUTTON": "Referenciák",
+  "TECHNOLOGIES_BUTTON": "Technológiák",
   "PRICING_BUTTON": "Árak",
   "CONTACT_BUTTON": "Kapcsolat",
   "HERO_SECTION_TITLE": "EGYEDI WEBOLDALAK, PROFESSZIONÁLISAN",
@@ -11,6 +12,10 @@
 
   "REFERENCES_SECTION_TITLE": "Referenciák",
   "REFERENCES_SECTION_SUBTITLE": "Szabadúszóként számos projektben vettem részt. Ezek között nem csak webes, de offline térinformatikia, döntéselőkészítő projektek is vannak. Tekintse meg néhány, nyilvánosan elérhető projektem.",
+
+  "TECHNOLOGIES_SECTION_TITLE": "Technológiák",
+  "TECHNOLOGIES_SECTION_SUBTITLE": "Minden projekt más-más igényeket támaszt, ezért mindig a legmegfelelőbb technológiákat választom az adott feladathoz. Kliensoldalon Angular keretrendszert használok a komplexebb, moduláris rendszerekhez, míg Reactet az egyszerűbb, de dinamikus és reszponzív alkalmazásokhoz. A reszponzív design megvalósításához Bootstrapet vagy – nagyobb testreszabhatóság esetén – Tailwindet alkalmazok. Szerveroldalon Node.js környezetben, NestJS keretrendszerrel dolgozom. Adatbázisok terén elsősorban MongoDB-t használok, de a relációs (SQL) adatbázisok is napi szinten részei a munkámnak.",
+
 
   "PRICES_SECTION_TITLE": "Árak",
   "PRICES_SECTION_SUBTITLE": "Versenyképes árakat kínálok a szolgáltatásaimra, így a befektetéséért a lehető legnagyobb értéket kapja. Vegye fel velem a kapcsolatot, hogy egyeztessünk az igényekről és személyre szabott árajánlatot adhassak.",

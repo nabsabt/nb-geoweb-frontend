@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { NgxVortexComponent } from '@omnedia/ngx-vortex';
 import { Dot, NgxMapComponent } from '@omnedia/ngx-map';
@@ -17,6 +17,7 @@ import { NgxNeonUnderlineComponent } from '@omnedia/ngx-neon-underline';
     NgxMapComponent,
     NgxMarqueeComponent,
     NgxNeonUnderlineComponent,
+    RouterModule,
   ],
   providers: [TranslateService],
 })
@@ -62,5 +63,9 @@ export class HomeComponent implements OnInit {
 
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
+  }
+
+  public navigateToExternalPage(url: string) {
+    window.open(url, '_blank');
   }
 }

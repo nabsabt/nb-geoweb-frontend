@@ -66,42 +66,73 @@
           {{ "REFERENCES_SECTION_SUBTITLE" | translate }}
         </p>
       </div>
-      <div class="graphics">
-        <om-marquee>
-          <ng-template>
-            <a
-              href="https://nsekszer.hu/"
-              target="_blank"
-              style="text-decoration: none"
-            >
-              <div class="card">
-                <p>NS Ékszer</p>
-              </div>
-            </a>
-          </ng-template>
-          <ng-template>
-            <a
-              href="https://koliapp-frontend.onrender.com"
-              target="_blank"
-              style="text-decoration: none"
-            >
-              <div class="card">
-                <p>KoliApp</p>
-              </div>
-            </a>
-          </ng-template>
-          <ng-template>
-            <a
-              href="https://nabsabt.github.io/gorsium-app-frontend/home"
-              target="_blank"
-              style="text-decoration: none"
-            >
-              <div class="card">
-                <p>Gorsium App</p>
-              </div>
-            </a>
-          </ng-template>
-        </om-marquee>
+      <div class="graphics reference-graphics">
+        <!--Koliapp-->
+        <div
+          (click)="
+            navigateToExternalPage(
+              'https://koliapp-frontend.onrender.com/login'
+            )
+          "
+          class="koliapp reference"
+        >
+          <p class="txt-primary-green">KoliApp</p>
+          <img class="reference-logo-img" src="assets/img/koliapp_logo.png" />
+        </div>
+        <!--NS ekszer-->
+        <div
+          (click)="navigateToExternalPage('https://nsekszer.hu/')"
+          class="ns-ekszer reference"
+        >
+          <p class="txt-primary-green">NS észer</p>
+          <img class="reference-logo-img" src="assets/img/ns-logo-dark.png" />
+        </div>
+        <!--Gorsium app-->
+        <div
+          (click)="
+            navigateToExternalPage(
+              'https://nabsabt.github.io/gorsium-app-frontend/home'
+            )
+          "
+          class="ns-ekszer reference"
+        >
+          <p class="txt-primary-green">Gorsium App</p>
+
+          <img src="assets/img/gorsiumapp_logo.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <om-neon-underline
+    [middleColor]="'#24b66f'"
+    [sideColor]="'#9ee8df'"
+  ></om-neon-underline>
+
+  <!--Technologies section-->
+  <div
+    #References
+    id="Technologies"
+    class="container technologies-section section"
+  >
+    <div class="title">
+      <p class="technologies-title txt-huge txt-primary-light">
+        {{ "TECHNOLOGIES_SECTION_TITLE" | translate }}
+      </p>
+    </div>
+
+    <div class="section-content">
+      <div class="text">
+        <p class="technologies-subtitle txt-sm txt-secondary-light">
+          {{ "TECHNOLOGIES_SECTION_SUBTITLE" | translate }}
+        </p>
+      </div>
+      <div class="graphics text-center">
+        <img
+          class="technologies-graphic"
+          src="assets/img/tech_img.png"
+          alt="Technologies Graphic"
+        />
       </div>
     </div>
   </div>
@@ -128,7 +159,7 @@
         <img
           class="price-graphic"
           src="assets/img/pricing-image.png"
-          alt="Introduction Graphic"
+          alt="Pricing Graphic"
           style=""
         />
       </div>

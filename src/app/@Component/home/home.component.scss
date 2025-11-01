@@ -25,6 +25,33 @@
       .graphics {
         flex: 1;
       }
+      .reference-graphics {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 1rem;
+        .reference {
+          border-radius: 10px;
+          width: fit-content;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border: 1px solid transparent;
+          padding: 1rem;
+          transition: 300ms;
+          cursor: pointer;
+          .reference-logo-img {
+            object-fit: contain;
+          }
+        }
+
+        .reference:hover {
+          border-radius: 10px;
+          border: solid #24b66f 1px;
+          transition: 300ms;
+        }
+      }
     }
   }
 }
@@ -38,6 +65,11 @@
       max-width: 50%;
       img {
         max-width: 100%;
+      }
+    }
+    .reference-graphics {
+      .reference {
+        width: 120px !important;
       }
     }
     .contact-section {
@@ -57,10 +89,13 @@
     .hero-section {
       height: 400px;
     }
-
+    .technologies-section {
+      height: 750px;
+    }
     .section-content {
       flex-direction: column-reverse; // 👈 image comes first, then text
       text-align: center;
+
       p {
         text-align: left;
       }
@@ -68,6 +103,15 @@
         width: 100%;
         img {
           max-width: 80%;
+        }
+        .technologies-graphic {
+          height: 200px;
+        }
+      }
+      .reference-graphics {
+        .reference {
+          width: 100px !important;
+          justify-content: space-between;
         }
       }
       .phone-number {

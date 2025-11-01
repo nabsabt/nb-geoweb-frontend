@@ -2,6 +2,7 @@
 {
   "INTRODUCTION_BUTTON": "Introduction",
   "REFERENCES_BUTTON": "References",
+  "TECHNOLOGIES_BUTTON": "Technologies",
   "PRICING_BUTTON": "Pricing",
   "CONTACT_BUTTON": "Contact",
   "HERO_SECTION_TITLE": "CUSTOM WEBSITES THAT WORK",
@@ -12,6 +13,9 @@
 
   "REFERENCES_SECTION_TITLE": "References",
   "REFERENCES_SECTION_SUBTITLE": "As a freelancer, I have worked on various projects. Many of those are not just published websites, but GIS projects with purpose of decision making. Feel free to take a look at some of my notable, publicly available projects.",
+
+  "TECHNOLOGIES_SECTION_TITLE": "Technologies",
+  "TECHNOLOGIES_SECTION_SUBTITLE": "Each project has its own unique requirements, and I always choose the most suitable tools to meet them. On the client side, I use Angular for complex, modular applications, and React for simpler but highly responsive projects. For building responsive layouts, I rely on Bootstrap or Tailwind when greater customization is needed. On the server side, I work within a Node.js environment using the NestJS framework. Most of my projects utilize MongoDB, though SQL databases are also part of my everyday workflow.",
 
   "PRICES_SECTION_TITLE": "Pricing",
   "PRICES_SECTION_SUBTITLE": "I offer competitive pricing for my services, ensuring that you get the best value for your investment. Contact me to discuss your project and get a personalized quote.",

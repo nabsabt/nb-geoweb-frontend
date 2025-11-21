@@ -255,52 +255,54 @@
           <div class="contact-card"></div>
         </div>
 
-        <div class="message-form">
-          <!--  <form
-            class="p-2"
-            (submit)="onSubmitMessage(inputForm)"
-            #inputForm="ngForm"
-          >
-            <mat-form-field class="form-field">
-              <mat-label>{{ "FORM_NAME" | translate }}</mat-label>
-              <input
-                type="text"
-                matInput
-                name="name"
-                class="form-control"
-                ngModel
-                #name="ngModel"
-                required
-              />
-            </mat-form-field>
+        <form
+          class="message-form p-2"
+          (submit)="onSubmitMessage(inputForm)"
+          #inputForm="ngForm"
+        >
+          <mat-form-field class="form-field">
+            <mat-label>{{ "FORM_NAME" | translate }}</mat-label>
+            <input
+              type="text"
+              matInput
+              name="name"
+              class="form-control"
+              ngModel
+              #name="ngModel"
+              required
+            />
+          </mat-form-field>
 
-            <mat-form-field class="form-field">
-              <mat-label>{{ "FORM_EMAIL" | translate }}</mat-label>
-              <input
-                type="text"
-                matInput
-                name="email"
-                class="form-control"
-                ngModel
-                #email="ngModel"
-                required
-              />
-            </mat-form-field>
+          <mat-form-field class="form-field">
+            <mat-label>{{ "FORM_EMAIL" | translate }}</mat-label>
+            <input
+              type="text"
+              matInput
+              name="email"
+              class="form-control"
+              ngModel
+              #email="ngModel"
+              required
+            />
+          </mat-form-field>
 
-            <mat-form-field class="form-field">
-              <mat-label>{{ "FORM_MESSAGE" | translate }}</mat-label>
-              <input
-                type="text"
-                matInput
-                name="message"
-                class="form-control"
-                ngModel
-                #message="ngModel"
-                required
-              />
-            </mat-form-field>
-          </form> -->
-        </div>
+          <mat-form-field class="form-field">
+            <mat-label>{{ "FORM_MESSAGE" | translate }}</mat-label>
+            <textarea
+              type="text"
+              matInput
+              name="message"
+              class="form-control"
+              ngModel
+              rows="10"
+              #message="ngModel"
+              required
+            ></textarea>
+          </mat-form-field>
+          <button class="button-primary-dark" type="submit">
+            {{ "FORM_SEND" | translate }}
+          </button>
+        </form>
       </div>
     </div>
   </div>

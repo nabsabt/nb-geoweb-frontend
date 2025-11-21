@@ -1,5 +1,5 @@
 /* DESKTOP VIEW */
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 993px) {
   nav {
     height: var(--desktop-navbar-height);
     top: 10px;
@@ -7,6 +7,9 @@
     border-radius: 10px !important;
     margin-left: 1rem !important;
     margin-right: 1rem !important;
+    border: 1px solid var(--NB-darker-grey);
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(15px);
 
     .navbar-collapse {
       .navbar-inner-content {
@@ -27,20 +30,24 @@
 }
 
 /* MOBILE VIEW */
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 992px) {
   nav.navbar {
     height: var(--mobile-navbar-height);
     top: 10px !important;
     border-radius: 10px !important;
     margin-left: 1rem !important;
     margin-right: 1rem !important;
+    background-color: var(--NB-grey) !important;
+    box-shadow: 5px 5px 10px var(--NB-lighter-black);
 
     .container-fluid {
       padding: 0;
     }
 
     .navbar-collapse {
-      background-color: var(--NB-white);
+      margin-top: 30px;
+      background-color: var(--NB-grey) !important;
+      box-shadow: 5px 5px 10px var(--NB-lighter-black);
       border-radius: 10px !important;
 
       .logo-container {

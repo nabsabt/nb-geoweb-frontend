@@ -39,6 +39,8 @@
    "FORM_NAME": "Név",
   "FORM_EMAIL": "E-mail",
   "FORM_MESSAGE": "Na, halljuk azt az ötletet...",
+     "FORM_SEND": "Küldés",
+
 
   "CONTACT_SECTION_TITLE": "Kapcsolat",
   "CONTACT_SECTION_TEXT": "A konkrét tervek már az asztalon, csupán a szakmai egyeztetés van hátra? Felmerült egy ötlet, de a megvalósítás folyamata kérdéses? Lelkesen várom a megkeresést alábbi kapcsolataim bármelyikén, vagy akár azonnali üzenetben is!"

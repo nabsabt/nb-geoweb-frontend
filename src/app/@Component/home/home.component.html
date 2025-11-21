@@ -48,177 +48,259 @@
   </div>
 
   <!--About section-->
-  <div #About id="About" class="about-section section"></div>
+  <div #About id="About" class="about-section section">
+    <div class="profile container">
+      <div class="profile-text">
+        <p class="txt-black txt-font-medium txt-lg">
+          {{ "ABOUT_SECTION_TITLE" | translate }}
+        </p>
+        <p class="txt-lighter-black txt-font-light txt-md">
+          {{ "ABOUT_SECTION_TEXT" | translate }}
+        </p>
+      </div>
+      <div class="profile-image">
+        <img src="assets/img/profile_small.jpg" alt="Profile Picture" />
+      </div>
+    </div>
+    <div class="cards container">
+      <div class="card">
+        <img src="assets/icon/code-icon-bw.svg" />
+        <p>{{ "CARD_CLEANCODE_TITLE" | translate }}</p>
+        <p>
+          {{ "CARD_CLEANCODE_TEXT" | translate }}
+        </p>
+      </div>
+      <div class="card">
+        <img src="assets/icon/lightbulb-icon-bw.svg" />
+        <p>{{ "CARD_INNOVATION_TITLE" | translate }}</p>
+        <p>
+          {{ "CARD_INNOVATION_TEXT" | translate }}
+        </p>
+      </div>
+      <div class="card">
+        <img src="assets/icon/users-icon-bw.svg" />
+        <p>{{ "CARD_COLLABORATION_TITLE" | translate }}</p>
+        <p>
+          {{ "CARD_COLLABORATION_TEXT" | translate }}
+        </p>
+      </div>
+      <div class="card">
+        <img src="assets/icon/rocket-icon-bw.svg" />
+        <p>{{ "CARD_PERFORMANCE_TITLE" | translate }}</p>
+        <p>
+          {{ "CARD_PERFORMANCE_TEXT" | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
 
   <!--Skills section-->
-  <div #Skills id="Skills" class="skills-section section"></div>
+  <div #Skills id="Skills" class="skills-section section">
+    <div class="inner-container">
+      <p class="txt-black txt-font-medium txt-lg">
+        {{ "SKILLS_SECTION_TITLE" | translate }}
+      </p>
+      <p class="txt-lighter-black txt-font-light txt-md">
+        {{ "SKILLS_SECTION_TEXT" | translate }}
+      </p>
+      <div class="cards-container">
+        <div class="card">
+          <p>{{ "SKILLS_FRONTEND" | translate }}</p>
+          <div class="badges">
+            <p class="badge">Angular</p>
+            <p class="badge">HTML</p>
+            <p class="badge">CSS</p>
+            <p class="badge">React</p>
+            <p class="badge">Angular Material</p>
+            <p class="badge">Bootstrap</p>
+            <p class="badge">MapLibre</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <p>{{ "SKILLS_BACKEND" | translate }}</p>
+          <div class="badges">
+            <p class="badge">NodeJS</p>
+            <p class="badge">NestJS</p>
+            <p class="badge">MongoDB</p>
+            <p class="badge">PostgreSQL</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <p>{{ "SKILLS_TOOLS_OTHERS" | translate }}</p>
+          <div class="badges">
+            <p class="badge">QGIS</p>
+            <p class="badge">Docker</p>
+            <p class="badge">Figma</p>
+            <p class="badge">Adobe Photoshop</p>
+            <p class="badge">GitHub</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--Projects section-->
-  <div #Projects id="Projects" class="projects-section section"></div>
+  <div #Projects id="Projects" class="projects-section section">
+    <p class="txt-black txt-font-medium txt-lg">
+      {{ "PROJECTS_SECTION_TITLE" | translate }}
+    </p>
+    <p class="txt-lighter-black txt-font-light txt-md">
+      {{ "PROJECTS_SECTION_SUBTITLE" | translate }}
+    </p>
+    <div class="project-cards">
+      <!--NS Ekszer-->
+      <div class="project-card">
+        <div class="project-img-container">
+          <img src="assets/img/PROJ_nsekszer.jpg" />
+        </div>
+        <div class="title">
+          <p class="txt-black txt-font-medium txt-md">NS-Ékszer</p>
+        </div>
+
+        <div class="text">
+          <p class="txt-black txt-font-light txt-sm">
+            {{ "NS_EKSZER_DESC" | translate }}
+          </p>
+        </div>
+        <div class="badges">
+          <p class="badge">Angular</p>
+          <p class="badge">Bootstrap</p>
+          <p class="badge">Figma</p>
+          <p class="badge">Render</p>
+        </div>
+        <div class="button-div">
+          <button class="button-primary-dark">Check ►</button>
+        </div>
+      </div>
+
+      <!--Koliapp-->
+      <div class="project-card">
+        <div class="project-img-container">
+          <img src="assets/img/PROJ_koliapp.jpg" />
+        </div>
+        <div class="title">
+          <p class="txt-black txt-font-medium txt-md">Koliapp</p>
+        </div>
+
+        <div class="text">
+          <p class="txt-black txt-font-light txt-sm">
+            {{ "KOLIAPP_DESC" | translate }}
+          </p>
+        </div>
+        <div class="badges">
+          <p class="badge">Angular</p>
+          <p class="badge">Bootstrap</p>
+          <p class="badge">Figma</p>
+          <p class="badge">NestJS</p>
+          <p class="badge">MongoDB</p>
+          <p class="badge">NodeJS</p>
+        </div>
+        <div class="button-div">
+          <button class="button-primary-dark">Check ►</button>
+        </div>
+      </div>
+
+      <!--Gorsium-->
+      <div class="project-card">
+        <div class="project-img-container">
+          <img src="assets/img/PROJ_gorsium.jpg" />
+        </div>
+        <div class="title">
+          <p class="txt-black txt-font-medium txt-md">Táci Gorsium App</p>
+        </div>
+
+        <div class="text">
+          <p class="txt-black txt-font-light txt-sm">
+            {{ "GORSIUM_DESC" | translate }}
+          </p>
+        </div>
+        <div class="badges">
+          <p class="badge">Angular</p>
+          <p class="badge">Bootstrap</p>
+          <p class="badge">MapLibre</p>
+          <p class="badge">NestJS</p>
+          <p class="badge">MongoDB</p>
+          <p class="badge">NodeJS</p>
+          <p class="badge">Figma</p>
+          <p class="badge">QGIS</p>
+        </div>
+        <div class="button-div">
+          <button class="button-primary-dark">Check ►</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--Contact section-->
   <div #Contact id="Contact" class="contact-section section">
-    <div class="title">
-      <p class="contact-title txt-huge txt-primary-light">
+    <div class="inner-container">
+      <p class="txt-black txt-font-medium txt-lg">
         {{ "CONTACT_SECTION_TITLE" | translate }}
       </p>
-    </div>
+      <p class="txt-lighter-black txt-font-light txt-md">
+        {{ "CONTACT_SECTION_TEXT" | translate }}
+      </p>
+      <div class="action-fields">
+        <div class="contacts">
+          <div class="contact-card">
+            <img src="assets/icon/mail-icon-bw.svg" />
+            <div><p>nabsabt@gmail.com</p></div>
+          </div>
+          <div class="contact-card">
+            <img src="assets/icon/phone-icon-bw.svg" />
+            <div><p>+36309940002</p></div>
+          </div>
+          <div class="contact-card"></div>
+        </div>
 
-    <div class="section-content">
-      <div class="text">
-        <p class="contact-subtitle txt-sm txt-secondary-light">
-          {{ "CONTACT_SECTION_TEXT" | translate }}
-        </p>
-      </div>
-      <div class="graphics d-flex justify-content-center align-items-center">
-        <a href="mailto:nabsabt@gmail.com" title="Send an email">
-          <svg
-            class="mx-2"
-            width="40px"
-            height="40px"
-            viewBox="0 -2.5 20 20"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            fill="#24B66F"
+        <div class="message-form">
+          <!--  <form
+            class="p-2"
+            (submit)="onSubmitMessage(inputForm)"
+            #inputForm="ngForm"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-
-            <g id="SVGRepo_iconCarrier">
-              <title>email [#1572]</title>
-              <desc>Created with Sketch.</desc>
-              <defs></defs>
-              <g
-                id="Page-1"
-                stroke="none"
-                stroke-width="1"
-                fill="none"
-                fill-rule="evenodd"
-              >
-                <g
-                  id="Dribbble-Light-Preview"
-                  transform="translate(-340.000000, -922.000000)"
-                  fill="#24B66F"
-                >
-                  <g id="icons" transform="translate(56.000000, 160.000000)">
-                    <path
-                      d="M294,774.474 L284,765.649 L284,777 L304,777 L304,765.649 L294,774.474 Z M294.001,771.812 L284,762.981 L284,762 L304,762 L304,762.981 L294.001,771.812 Z"
-                      id="email-[#1572]"
-                    ></path>
-                  </g>
-                </g>
-              </g>
-            </g>
-          </svg>
-        </a>
-
-        <a href="https://www.facebook.com/bence.nagy.1675" target="_blank">
-          <svg
-            class="mx-2"
-            width="40px"
-            height="40px"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z"
-                fill="#24B66F"
+            <mat-form-field class="form-field">
+              <mat-label>{{ "FORM_NAME" | translate }}</mat-label>
+              <input
+                type="text"
+                matInput
+                name="name"
+                class="form-control"
+                ngModel
+                #name="ngModel"
+                required
               />
-            </g>
-          </svg>
-        </a>
+            </mat-form-field>
 
-        <a href="https://github.com/nabsabt" target="_blank">
-          <svg
-            class="mx-2"
-            width="40px"
-            height="40px"
-            viewBox="0 0 20 20"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            fill="#24b66f"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <title>github [#142]</title>
-              <desc>Created with Sketch.</desc>
-              <defs></defs>
-              <g
-                id="Page-1"
-                stroke="none"
-                stroke-width="1"
-                fill="none"
-                fill-rule="evenodd"
-              >
-                <g
-                  id="Dribbble-Light-Preview"
-                  transform="translate(-140.000000, -7559.000000)"
-                  fill="#24b66f"
-                >
-                  <g id="icons" transform="translate(56.000000, 160.000000)">
-                    <path
-                      d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
-                      id="github-[#142]"
-                    ></path>
-                  </g>
-                </g>
-              </g>
-            </g>
-          </svg>
-        </a>
-
-        <a class="phone-icon" href="tel:+36309940002" title="+36309940002">
-          <svg
-            class="mx-2"
-            width="40px"
-            height="40px"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-
-            <g id="SVGRepo_iconCarrier">
-              <rect width="24" height="24" fill="none" />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M2.14089 4.4021C2.34025 2.92963 3.63956 2 4.99004 2H7.55848C8.84977 2 9.99619 2.82629 10.4045 4.05132L11.454 7.19963C11.905 8.55283 11.1086 10.0036 9.72482 10.3496C9.38646 10.4342 9.26975 10.8555 9.51637 11.1022L12.8978 14.4836C13.1445 14.7303 13.5658 14.6135 13.6504 14.2752C13.9964 12.8914 15.4472 12.095 16.8004 12.546L19.9487 13.5955C21.1737 14.0038 22 15.1502 22 16.4415V19.01C22 20.3604 21.0704 21.6598 19.5979 21.8591C18.9114 21.9521 18.211 22 17.5 22C8.93959 22 2 15.0604 2 6.5C2 5.78898 2.04794 5.08863 2.14089 4.4021Z"
-                fill="#24B66F"
+            <mat-form-field class="form-field">
+              <mat-label>{{ "FORM_EMAIL" | translate }}</mat-label>
+              <input
+                type="text"
+                matInput
+                name="email"
+                class="form-control"
+                ngModel
+                #email="ngModel"
+                required
               />
-            </g>
-          </svg>
-        </a>
+            </mat-form-field>
 
-        <p class="phone-number txt-primary-green m-0 p-0">+36309940002</p>
+            <mat-form-field class="form-field">
+              <mat-label>{{ "FORM_MESSAGE" | translate }}</mat-label>
+              <input
+                type="text"
+                matInput
+                name="message"
+                class="form-control"
+                ngModel
+                #message="ngModel"
+                required
+              />
+            </mat-form-field>
+          </form> -->
+        </div>
       </div>
     </div>
   </div>

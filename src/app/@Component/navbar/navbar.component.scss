@@ -22,10 +22,6 @@
         width: 50px;
         height: 50px;
       }
-
-      .navbar-nav {
-        gap: 1rem;
-      }
     }
   }
 }
@@ -57,8 +53,10 @@
       }
 
       .navbar-nav {
-        gap: 2rem;
+        //gap: 2rem;
+        margin-bottom: 2rem;
         .nav-item {
+          border-bottom: 1px solid var(--NB-darker-grey);
           margin-left: auto;
           margin-right: auto;
         }

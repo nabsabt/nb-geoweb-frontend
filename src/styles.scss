@@ -75,6 +75,10 @@ body {
   color: var(--NB-darker-grey);
 }
 
+.txt-xs {
+  font-size: 12px;
+}
+
 .txt-sm {
   font-size: 16px;
 }
@@ -159,6 +163,7 @@ body {
 .button-primary-dark {
   border: none;
   border-radius: 10px;
+  height: fit-content;
   width: fit-content;
   background-color: var(--NB-black);
   margin: 0;
@@ -185,6 +190,13 @@ body {
 .button-primary-light:hover {
   background-color: var(--NB-darker-grey);
   transition: 200ms;
+}
+
+.badge {
+  font-size: 12px;
+  background-color: var(--NB-darker-grey);
+  color: var(--NB-black);
+  border-radius: 10px;
 }
 
 /* DESKTOP VIEW */

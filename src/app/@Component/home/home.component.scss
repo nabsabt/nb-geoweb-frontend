@@ -2,57 +2,57 @@
   overflow-y: auto;
 
   .hero-section {
-    height: 500px;
-  }
-  .section {
-    height: 500px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    .title {
-      display: none;
+
+    background-image: linear-gradient(
+        to bottom,
+        var(--NB-darker-grey) 0%,
+        /* color at the fade end */ rgba(255, 255, 255, 0) 10%
+          /* completely transparent at 20% */
+      ),
+      url("/assets/img/hero-section-bg-light.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .card {
+      min-width: 350px;
       text-align: center;
-    }
-    .section-content {
-      display: flex;
-      justify-content: space-between;
+      width: 40%;
+      border-radius: 20px;
+      padding: 2rem;
       align-items: center;
-      gap: 2rem;
+      background-color: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(15px);
 
-      .text {
-        flex: 1;
-      }
-      .graphics {
-        flex: 1;
-      }
-      .reference-graphics {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 1rem;
-        .reference {
-          border-radius: 10px;
-          width: fit-content;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          border: 1px solid transparent;
-          padding: 1rem;
-          transition: 300ms;
-          cursor: pointer;
-          .reference-logo-img {
-            object-fit: contain;
-          }
+      .action-area {
+        margin-top: 2rem;
+
+        .buttons {
+          margin-bottom: 1rem;
         }
-
-        .reference:hover {
-          border-radius: 10px;
-          border: solid #24b66f 1px;
-          transition: 300ms;
+        .buttons button,
+        .icons a {
+          margin: 0.5rem;
         }
       }
     }
+  }
+  .about-section {
+    background-color: aqua;
+  }
+  .skills-section {
+    background-color: red;
+  }
+  .projects-section {
+    background-color: blue;
+  }
+  .contact-section {
+    background-color: yellow;
   }
 }
 
@@ -60,24 +60,20 @@
 @media only screen and (min-width: 701px) {
   .home-container {
     margin-top: var(--desktop-navbar-height);
+    .hero-section {
+      .text-area {
+        .hero-title {
+          font-size: 36px;
+          line-height: 44px;
+          letter-spacing: 5px;
+        }
+      }
+    }
+  }
 
-    .graphics {
-      max-width: 50%;
-      img {
-        max-width: 100%;
-      }
-    }
-    .reference-graphics {
-      .reference {
-        width: 120px !important;
-      }
-    }
-    .contact-section {
-      height: 200px;
-      .phone-icon {
-        display: none;
-      }
-    }
+  .section {
+    min-height: calc(100vh - var(--desktop-navbar-height));
+    height: fit-content;
   }
 }
 
@@ -85,54 +81,19 @@
 @media only screen and (max-width: 700px) {
   .home-container {
     margin-top: var(--mobile-navbar-height);
-
     .hero-section {
-      height: 400px;
-    }
-    .technologies-section {
-      height: 750px;
-    }
-    .section-content {
-      flex-direction: column-reverse; // 👈 image comes first, then text
-      text-align: center;
-
-      p {
-        text-align: left;
-      }
-      .graphics {
-        width: 100%;
-        img {
-          max-width: 80%;
+      .text-area {
+        .hero-title {
+          font-size: 30px;
+          line-height: 44px;
+          letter-spacing: 2px;
         }
-        .technologies-graphic {
-          height: 200px;
-        }
-      }
-      .reference-graphics {
-        .reference {
-          width: 100px !important;
-          justify-content: space-between;
-        }
-      }
-      .phone-number {
-        display: none;
-      }
-    }
-
-    .contact-section {
-      height: 300px;
-      .phone-number {
-        display: none;
       }
     }
   }
-}
 
-//CARD style
-.card {
-  border-radius: 0.75rem;
-  border: 1px solid var(--primary-green);
-  padding: 2rem;
-  background-color: var(--primary-dark);
-  color: var(--primary-green);
+  .section {
+    min-height: calc(100vh - var(--mobile-navbar-height));
+    height: fit-content;
+  }
 }

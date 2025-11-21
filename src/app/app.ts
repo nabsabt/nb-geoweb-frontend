@@ -9,5 +9,5 @@ import { NavbarComponent } from './@Component/navbar/navbar.component';
   styleUrl: './app.scss',
 })
 export class App {
-  protected readonly title = signal('nb-geoweb-frontend');
+  protected readonly title = signal('Nagy Bence e.v.');
 }

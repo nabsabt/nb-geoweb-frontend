@@ -1,9 +1,8 @@
 
 {
-  "INTRODUCTION_BUTTON": "Introduction",
-  "REFERENCES_BUTTON": "References",
-  "TECHNOLOGIES_BUTTON": "Technologies",
-  "PRICING_BUTTON": "Pricing",
+  "ABOUT_BUTTON": "About",
+  "SKILLS_BUTTON": "Skills",
+  "PROJECTS_BUTTON": "Projects",
   "CONTACT_BUTTON": "Contact",
   "HERO_SECTION_TITLE": "CUSTOM WEBSITES THAT WORK",
   "HERO_SECTION_SUBTITLE": "Fast, modern, built for you",

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md fixed-top">
+<nav class="navbar navbar-expand-md fixed-top bg-white">
   <div class="container-fluid">
     <button
       class="navbar-toggler mx-auto"
@@ -34,77 +34,61 @@
           </a>
           <p class="txt-md m-0">
             Nagy Bence e.v. |
-            <button class="button-primary" (click)="changeLanguage()">
-              <p
-                class="txt-md txt-primary-green p-0 m-0"
-                style="text-decoration: underline"
-              >
-                {{ changeToLangValue }}
+            <button
+              class="button-navbar button-LANG"
+              (click)="changeLanguage()"
+            >
+              <p class="txt-md txt-font-bold p-0 m-0">
+                {{ changeToLangValue | uppercase }}
               </p>
             </button>
           </p>
         </div>
         <!--Links-->
-        <hr class="txt-primary-green" />
         <div>
           <ul class="navbar-nav navbar-links mb-lg-0">
-            <!--Introduction-->
+            <!--About-->
             <li class="nav-item">
               <a
                 class="nav-link active"
                 aria-current="page"
                 [routerLink]="['']"
-                fragment="Introduction"
+                fragment="About"
                 (click)="collapseNavbar()"
               >
-                <button class="button-primary">
-                  <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
-                    {{ "INTRODUCTION_BUTTON" | translate }}
+                <button class="button-navbar">
+                  <p class="txt-md">
+                    {{ "ABOUT_BUTTON" | translate }}
                   </p>
                 </button>
               </a>
             </li>
 
-            <!--References-->
+            <!--Skills-->
             <li class="nav-item">
               <a
                 class="nav-link"
                 [routerLink]="['']"
-                fragment="References"
+                fragment="Skills"
                 (click)="collapseNavbar()"
-                ><button class="button-primary">
-                  <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
-                    {{ "REFERENCES_BUTTON" | translate }}
+                ><button class="button-navbar">
+                  <p class="txt-md">
+                    {{ "SKILLS_BUTTON" | translate }}
                   </p>
                 </button></a
               >
             </li>
 
-            <!--Technologies-->
+            <!--Projects-->
             <li class="nav-item">
               <a
                 class="nav-link"
                 [routerLink]="['']"
-                fragment="Technologies"
+                fragment="Projects"
                 (click)="collapseNavbar()"
-                ><button class="button-primary">
-                  <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
-                    {{ "TECHNOLOGIES_BUTTON" | translate }}
-                  </p>
-                </button></a
-              >
-            </li>
-
-            <!--Pricing-->
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                [routerLink]="['']"
-                fragment="Pricing"
-                (click)="collapseNavbar()"
-                ><button class="button-primary">
-                  <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
-                    {{ "PRICING_BUTTON" | translate }}
+                ><button class="button-navbar">
+                  <p class="txt-md">
+                    {{ "PROJECTS_BUTTON" | translate }}
                   </p>
                 </button></a
               >
@@ -117,8 +101,8 @@
                 [routerLink]="['']"
                 fragment="Contact"
                 (click)="collapseNavbar()"
-                ><button class="button-primary">
-                  <p class="nav-link-name txt-md txt-primary-green p-0 m-0">
+                ><button class="button-navbar">
+                  <p class="txt-md">
                     {{ "CONTACT_BUTTON" | translate }}
                   </p>
                 </button></a
@@ -127,8 +111,6 @@
           </ul>
         </div>
       </div>
-
-      <hr />
     </div>
   </div>
 </nav>

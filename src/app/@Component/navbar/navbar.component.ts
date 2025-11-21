@@ -1,3 +1,4 @@
+import { UpperCasePipe } from '@angular/common';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -7,7 +8,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
   standalone: true,
-  imports: [RouterModule, TranslateModule],
+  imports: [RouterModule, TranslateModule, UpperCasePipe],
   providers: [TranslateService],
 })
 export class NavbarComponent implements OnInit {

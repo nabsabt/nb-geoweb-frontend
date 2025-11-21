@@ -1,177 +1,63 @@
 <div class="home-container">
   <!--Hero section-->
-  <div class="hero-section">
-    <om-vortex
-      class="vortex"
-      [firstGradientColors]="['#105735', '#0b3d25']"
-      [secondGradientColors]="['#044f2b', '#03331c']"
-      [waveAmount]="24"
-    >
-      <div class="hero-section-content container">
-        <p class="hero-title txt-huge txt-primary-green txt-font-bold">
+  <div class="hero-section section">
+    <div class="card">
+      <!--Text Area (title+subtitle)-->
+      <div class="text-area">
+        <p class="hero-title txt-black txt-font-bold">
           {{ "HERO_SECTION_TITLE" | translate }}
         </p>
-        <p class="hero-subtitle txt-md txt-primary-green">
+
+        <p class="hero-subtitle txt-md txt-lighter-black txt-font-medium">
           {{ "HERO_SECTION_SUBTITLE" | translate }}
         </p>
       </div>
-    </om-vortex>
-  </div>
-
-  <!--Introduction section-->
-  <div
-    #Introduction
-    id="Introduction"
-    class="container introduction-section section"
-  >
-    <div class="title">
-      <p class="introduction-title txt-huge txt-primary-light">
-        {{ "INTRO_SECTION_TITLE" | translate }}
-      </p>
-    </div>
-
-    <div class="section-content">
-      <div class="text">
-        <p class="introduction-subtitle txt-sm txt-secondary-light">
-          {{ "INTRO_SECTION_SUBTITLE" | translate }}
-        </p>
-      </div>
-      <div class="graphics">
-        <om-map
-          [dots]="dots"
-          [lineColor]="'#d0d0d0'"
-          [mapColor]="'#24b66f'"
-          [animated]="true"
-        ></om-map>
-      </div>
-    </div>
-  </div>
-
-  <om-neon-underline
-    [middleColor]="'#24b66f'"
-    [sideColor]="'#9ee8df'"
-  ></om-neon-underline>
-
-  <!--References section-->
-  <div #References id="References" class="container references-section section">
-    <div class="title">
-      <p class="references-title txt-huge txt-primary-light">
-        {{ "REFERENCES_SECTION_TITLE" | translate }}
-      </p>
-    </div>
-
-    <div class="section-content">
-      <div class="text">
-        <p class="references-subtitle txt-sm txt-secondary-light">
-          {{ "REFERENCES_SECTION_SUBTITLE" | translate }}
-        </p>
-      </div>
-      <div class="graphics reference-graphics">
-        <!--Koliapp-->
-        <div
-          (click)="
-            navigateToExternalPage(
-              'https://koliapp-frontend.onrender.com/login'
-            )
-          "
-          class="koliapp reference"
-        >
-          <p class="txt-primary-green">KoliApp</p>
-          <img class="reference-logo-img" src="assets/img/koliapp_logo.png" />
+      <!--Action Area (nav to fragments + SM icons)-->
+      <div class="action-area">
+        <div class="buttons">
+          <a [routerLink]="['']" fragment="Projects">
+            <button class="button-primary-dark">
+              {{ "PROJECTS_BUTTON" | translate }}
+            </button>
+          </a>
+          <a [routerLink]="['']" fragment="Contact">
+            <button class="button-primary-light">
+              {{ "CONTACT_BUTTON" | translate }}
+            </button>
+          </a>
         </div>
-        <!--NS ekszer-->
-        <div
-          (click)="navigateToExternalPage('https://nsekszer.hu/')"
-          class="ns-ekszer reference"
-        >
-          <p class="txt-primary-green">NS észer</p>
-          <img class="reference-logo-img" src="assets/img/ns-logo-dark.png" />
-        </div>
-        <!--Gorsium app-->
-        <div
-          (click)="
-            navigateToExternalPage(
-              'https://nabsabt.github.io/gorsium-app-frontend/home'
-            )
-          "
-          class="ns-ekszer reference"
-        >
-          <p class="txt-primary-green">Gorsium App</p>
-
-          <img src="assets/img/gorsiumapp_logo.png" />
+        <div class="icons">
+          <a href="https://github.com/nabsabt/" target="_blank" title="GitHub"
+            ><img
+              alt="github"
+              style="width: 30px; height: 30px"
+              src="assets/icon/github-icon-bw.svg"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/bence-nagy-a75455162/"
+            target="_blank"
+            title="LinkedIn"
+            ><img
+              alt="linkedin"
+              style="width: 30px; height: 30px"
+              src="assets/icon/linkedin-icon-bw.svg"
+          /></a>
         </div>
       </div>
     </div>
   </div>
 
-  <om-neon-underline
-    [middleColor]="'#24b66f'"
-    [sideColor]="'#9ee8df'"
-  ></om-neon-underline>
+  <!--About section-->
+  <div #About id="About" class="about-section section"></div>
 
-  <!--Technologies section-->
-  <div
-    #References
-    id="Technologies"
-    class="container technologies-section section"
-  >
-    <div class="title">
-      <p class="technologies-title txt-huge txt-primary-light">
-        {{ "TECHNOLOGIES_SECTION_TITLE" | translate }}
-      </p>
-    </div>
+  <!--Skills section-->
+  <div #Skills id="Skills" class="skills-section section"></div>
 
-    <div class="section-content">
-      <div class="text">
-        <p class="technologies-subtitle txt-sm txt-secondary-light">
-          {{ "TECHNOLOGIES_SECTION_SUBTITLE" | translate }}
-        </p>
-      </div>
-      <div class="graphics text-center">
-        <img
-          class="technologies-graphic"
-          src="assets/img/tech_img.png"
-          alt="Technologies Graphic"
-        />
-      </div>
-    </div>
-  </div>
+  <!--Projects section-->
+  <div #Projects id="Projects" class="projects-section section"></div>
 
-  <om-neon-underline
-    [middleColor]="'#24b66f'"
-    [sideColor]="'#9ee8df'"
-  ></om-neon-underline>
-  <!--Prices section-->
-  <div #Pricing id="Pricing" class="container prices-section section">
-    <div class="title">
-      <p class="prices-title txt-huge txt-primary-light">
-        {{ "PRICES_SECTION_TITLE" | translate }}
-      </p>
-    </div>
-
-    <div class="section-content">
-      <div class="text">
-        <p class="prices-subtitle txt-sm txt-secondary-light">
-          {{ "PRICES_SECTION_SUBTITLE" | translate }}
-        </p>
-      </div>
-      <div class="graphics">
-        <img
-          class="price-graphic"
-          src="assets/img/pricing-image.png"
-          alt="Pricing Graphic"
-          style=""
-        />
-      </div>
-    </div>
-  </div>
-
-  <om-neon-underline
-    [middleColor]="'#24b66f'"
-    [sideColor]="'#9ee8df'"
-  ></om-neon-underline>
   <!--Contact section-->
-  <div #Contact id="Contact" class="container contact-section section">
+  <div #Contact id="Contact" class="contact-section section">
     <div class="title">
       <p class="contact-title txt-huge txt-primary-light">
         {{ "CONTACT_SECTION_TITLE" | translate }}

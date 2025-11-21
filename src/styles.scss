@@ -23,10 +23,11 @@ body {
 
 //COLORS
 :root {
-  --primary-green: #24b66f;
-  --primary-dark: #101010;
-  --primary-light: #d0d0d0;
-  --secondary-light: #8e8e8e;
+  --NB-white: #ffffff;
+  --NB-grey: #f9f9fa;
+  --NB-darker-grey: #e5e5e7;
+  --NB-black: #030213;
+  --NB-lighter-black: #3a3948;
 
   /* Font */
   --font-family: "Inter", sans-serif;
@@ -43,6 +44,9 @@ body {
   --mobile-navbar-height: 75px;
   --desktop-navbar-height: 100px;
 }
+
+/** Text styles
+*/
 .txt-font-light {
   font-weight: 300;
 }
@@ -55,31 +59,20 @@ body {
   font-weight: 700;
 }
 
-.txt-primary-green {
-  color: #24b66f;
+.txt-white {
+  color: var(--NB-white);
 }
-.txt-primary-dark {
-  color: #101010;
+.txt-black {
+  color: var(--NB-black);
 }
-.txt-primary-light {
-  color: #d0d0d0;
+.txt-lighter-black {
+  color: var(--NB-lighter-black);
 }
-.txt-secondary-light {
-  color: #8e8e8e;
+.txt-grey {
+  color: var(--NB-grey);
 }
-
-.bg-primary-green {
-  background-color: #24b66f;
-}
-
-.bg-primary-dark {
-  background-color: #101010;
-}
-.bg-primary-light {
-  background-color: #d0d0d0;
-}
-.bg-secondary-light {
-  background-color: #8e8e8e;
+.txt-darker-grey {
+  color: var(--NB-darker-grey);
 }
 
 .txt-sm {
@@ -93,24 +86,105 @@ body {
 }
 .txt-huge {
   font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 5px;
 }
 
-.button-primary {
-  background-color: #101010;
-  margin: 0;
+/** background styles
+*/
+.bg-white {
+  background-color: var(--NB-white);
+}
+
+.bg-black {
+  background-color: var(--NB-black);
+}
+.bg-lighter-black {
+  background-color: var(--NB-lighter-black);
+}
+.bg-grey {
+  background-color: var(--NB-grey);
+}
+.bg-darker-grey {
+  background-color: var(--NB-darker-grey);
+}
+
+/** Button styles
+*/
+.button-navbar {
   border: none;
-  border-radius: 5px;
-  transition: border 0.2s ease, box-shadow 0.2s ease; // optional
+  min-width: 160px;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  display: inline-block; /* fix width stretching */
+  margin: 0;
+  color: var(--NB-lighter-black);
+  height: 40px;
+  width: fit-content;
+  padding: 10px;
+  font-size: var(--font-size-md);
+  transition: 200ms;
+}
+.button-LANG {
+  min-width: 0;
+  width: fit-content !important;
 }
 
-.button-primary:hover {
-  border: 1px solid inset #24b66f; // 👈 this creates the "stroke"
-  box-shadow: 0 0 0 1px #24b66f; // optional soft outline effect
+.button-navbar p {
+  position: relative;
+  display: inline-block; /* needed for underline width */
+  margin: 0;
+  padding: 0;
 }
 
-.button-primary:active {
-  border: 1px solid inset #d0d0d0; // ✅ Correct
-  box-shadow: 0 0 0 1px #d0d0d0; // Optional outline
+.button-navbar p::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* adjust as needed */
+  left: 0;
+  height: 1px;
+  width: 100%;
+  opacity: 0.3;
+  background: var(--NB-lighter-black);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms ease;
+}
+
+.button-navbar:hover p::after {
+  transform: scaleX(1);
+}
+
+.button-primary-dark {
+  border: none;
+  border-radius: 10px;
+  width: fit-content;
+  background-color: var(--NB-black);
+  margin: 0;
+  color: var(--NB-white);
+  font-size: var(--font-size-sm);
+  transition: 200ms;
+}
+.button-primary-dark:hover {
+  background-color: var(--NB-lighter-black);
+  transition: 200ms;
+}
+
+.button-primary-light {
+  border: 1px solid var(--NB-lighter-black);
+  border-radius: 10px;
+  width: fit-content;
+  background-color: var(--NB-white);
+
+  margin: 0;
+  color: var(--NB-black);
+  font-size: var(--font-size-sm);
+  transition: 200ms;
+}
+.button-primary-light:hover {
+  background-color: var(--NB-darker-grey);
+  transition: 200ms;
 }
 
 /* DESKTOP VIEW */
@@ -123,7 +197,7 @@ body {
     //overflow: hidden; /* Prevent scrolling on body */
   }
   body {
-    background-color: #101010;
+    background-color: var(--NB-darker-grey);
   }
 }
 
@@ -137,6 +211,6 @@ body {
     //overflow: hidden; /* Prevent scrolling on body */
   }
   body {
-    background-color: #101010;
+    background-color: var(--NB-darker-grey);
   }
 }

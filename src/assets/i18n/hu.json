@@ -1,10 +1,9 @@
 {
-  "INTRODUCTION_BUTTON": "Bemutatkozás",
-  "REFERENCES_BUTTON": "Referenciák",
-  "TECHNOLOGIES_BUTTON": "Technológiák",
-  "PRICING_BUTTON": "Árak",
+  "ABOUT_BUTTON": "Rólam",
+  "SKILLS_BUTTON": "Technológiák",
+  "PROJECTS_BUTTON": "Referenciák",
   "CONTACT_BUTTON": "Kapcsolat",
-  "HERO_SECTION_TITLE": "EGYEDI WEBOLDALAK, PROFESSZIONÁLISAN",
+  "HERO_SECTION_TITLE": "EGYEDI WEBLAPOK, EGYEDI MEGOLDÁS",
   "HERO_SECTION_SUBTITLE": "Gyors, modern, személyre szabott",
 
   "INTRO_SECTION_TITLE": "Bemutatkozás",

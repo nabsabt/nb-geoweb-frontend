@@ -1,26 +1,48 @@
 {
-  "INTRODUCTION_BUTTON": "Bemutatkozás",
-  "REFERENCES_BUTTON": "Referenciák",
-  "TECHNOLOGIES_BUTTON": "Technológiák",
-  "PRICING_BUTTON": "Árak",
+  "ABOUT_BUTTON": "Rólam",
+  "SKILLS_BUTTON": "Technológiák",
+  "PROJECTS_BUTTON": "Referenciák",
   "CONTACT_BUTTON": "Kapcsolat",
-  "HERO_SECTION_TITLE": "EGYEDI WEBOLDALAK, PROFESSZIONÁLISAN",
+  "HERO_SECTION_TITLE": "EGYEDI WEBLAPOK, EGYEDI MEGOLDÁS",
   "HERO_SECTION_SUBTITLE": "Gyors, modern, személyre szabott",
 
-  "INTRO_SECTION_TITLE": "Bemutatkozás",
-  "INTRO_SECTION_SUBTITLE": "Több éves webfejlesztési tapasztalattal rendelkezem, és hiszek abban, hogy minden ügyfél számára egyedi megoldásokat tudok kínálni. Fő profilom a webes térképi applikációk fejlesztése, így nem csak egyedi weboldalak készítését, de térbeli adatok webes környezetben való vizualizálását is vállalom.",
+  "ABOUT_SECTION_TITLE": "Rólam",
+  "ABOUT_SECTION_TEXT": "Több éves webfejlesztési tapasztalattal rendelkezem, és hiszek abban, hogy minden ügyfél számára egyedi megoldásokat tudok kínálni. Fő profilom a webes térképi applikációk fejlesztése, így nem csak egyedi weboldalak készítését, de térbeli adatok webes környezetben való vizualizálását is vállalom.",
 
-  "REFERENCES_SECTION_TITLE": "Referenciák",
-  "REFERENCES_SECTION_SUBTITLE": "Szabadúszóként számos projektben vettem részt. Ezek között nem csak webes, de offline térinformatikia, döntéselőkészítő projektek is vannak. Tekintse meg néhány, nyilvánosan elérhető projektem.",
+  "CARD_CLEANCODE_TITLE": "Clean code",
+  "CARD_CLEANCODE_TEXT": "Karbantartható és skálázható kód írása, clean code-elvek szem előtt tartásaval.",
 
-  "TECHNOLOGIES_SECTION_TITLE": "Technológiák",
-  "TECHNOLOGIES_SECTION_SUBTITLE": "Minden projekt más-más igényeket támaszt, ezért mindig a legmegfelelőbb technológiákat választom az adott feladathoz. Kliensoldalon Angular keretrendszert használok a komplexebb, moduláris rendszerekhez, míg Reactet az egyszerűbb, de dinamikus és reszponzív alkalmazásokhoz. A reszponzív design megvalósításához Bootstrapet vagy – nagyobb testreszabhatóság esetén – Tailwindet alkalmazok. Szerveroldalon Node.js környezetben, NestJS keretrendszerrel dolgozom. Adatbázisok terén elsősorban MongoDB-t használok, de a relációs (SQL) adatbázisok is napi szinten részei a munkámnak.",
+  "CARD_INNOVATION_TITLE": "Innováció",
+  "CARD_INNOVATION_TEXT": "A legújabb technológiák alkalmazása, hogy mindig a legmodernebb megoldásokat nyújtsam.",
+
+  "CARD_COLLABORATION_TITLE": "Együttműködés",
+  "CARD_COLLABORATION_TEXT": "Együttműködés más csapatokkal és ügyfelekkel a hatékony megvalósítás érdekében.",
+
+  "CARD_PERFORMANCE_TITLE": "Hatékonyság",
+  "CARD_PERFORMANCE_TEXT": "Gyors és jól optimalizált alkalmazások fejlesztése, a kiváló felhasználói élményért.",
+
+  "SKILLS_SECTION_TITLE": "Eszköztár",
+  "SKILLS_SECTION_TEXT": "Az alábbi keretrendszereket és technológiákat alkalmazom napi rendszerességgel.",
+
+    "SKILLS_FRONTEND": "Kliensoldal",
+  "SKILLS_BACKEND": "Szerveroldal",
+  "SKILLS_TOOLS_OTHERS": "Egyéb eszközök",
 
 
-  "PRICES_SECTION_TITLE": "Árak",
-  "PRICES_SECTION_SUBTITLE": "Versenyképes árakat kínálok a szolgáltatásaimra, így a befektetéséért a lehető legnagyobb értéket kapja. Vegye fel velem a kapcsolatot, hogy egyeztessünk az igényekről és személyre szabott árajánlatot adhassak.",
+  "PROJECTS_SECTION_TITLE": "Referenciák",
+  "PROJECTS_SECTION_SUBTITLE": "Alább néhány, nyilvánosan is elérhető projektem tekinthető meg.",
+
+  "NS_EKSZER_DESC": "Egy kézműves ékszerész és ékszerkészítő portfólió oldala",
+  "KOLIAPP_DESC": "Egy adminisztratív app, a kollégiumban lakó egyetemisták életét megkönnyítendő",
+  "GORSIUM_DESC": "Táci Gorsium Régészeti park webes térképi app-ja. A látogatók tájékozódását segítendő, fejlesztése folyamatban.",
+
+   "FORM_NAME": "Név",
+  "FORM_EMAIL": "E-mail",
+  "FORM_MESSAGE": "Na, halljuk azt az ötletet...",
+     "FORM_SEND": "Küldés",
+
 
   "CONTACT_SECTION_TITLE": "Kapcsolat",
-  "CONTACT_SECTION_TEXT": "A konkrét tervek már az asztalon, csupán a szakmai egyeztetés van hátra? Felmerült egy ötlet, de a megvalósítás folyamata kérdéses? Vegye fel felem a kapcsolatot elárhetőségeim bármelyikén!"
+  "CONTACT_SECTION_TEXT": "A konkrét tervek már az asztalon, csupán a szakmai egyeztetés van hátra? Felmerült egy ötlet, de a megvalósítás folyamata kérdéses? Lelkesen várom a megkeresést alábbi kapcsolataim bármelyikén, vagy akár azonnali üzenetben is!"
 
 }

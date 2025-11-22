@@ -1,0 +1,82 @@
+<div class="contact-section">
+  <div class="inner-container">
+    <p class="txt-black txt-font-medium txt-lg">
+      {{ "CONTACT_SECTION_TITLE" | translate }}
+    </p>
+    <p class="txt-lighter-black txt-font-light txt-md">
+      {{ "CONTACT_SECTION_TEXT" | translate }}
+    </p>
+    <div class="action-fields">
+      <div class="contacts">
+        <a href="mailto:nabsabt@gmail.com" title="Send an email">
+          <div class="contact-card">
+            <img src="assets/icon/mail-icon-bw.svg" />
+            <div>
+              <p class="txt-font-light txt-black txt-xs">nabsabt@gmail.com</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="tel:+36309940002"
+          ><div class="contact-card">
+            <img src="assets/icon/phone-icon-bw.svg" />
+            <div>
+              <p class="txt-font-light txt-black txt-xs">+36309940002</p>
+            </div>
+          </div></a
+        >
+
+        <div class="contact-card"></div>
+      </div>
+
+      <form
+        class="message-form p-2"
+        (submit)="onSubmitMessage(inputForm)"
+        #inputForm="ngForm"
+      >
+        <mat-form-field class="form-field">
+          <mat-label>{{ "FORM_NAME" | translate }}</mat-label>
+          <input
+            type="text"
+            matInput
+            name="name"
+            class="form-control"
+            ngModel
+            #name="ngModel"
+            required
+          />
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+          <mat-label>{{ "FORM_EMAIL" | translate }}</mat-label>
+          <input
+            type="text"
+            matInput
+            name="email"
+            class="form-control"
+            ngModel
+            #email="ngModel"
+            required
+          />
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+          <mat-label>{{ "FORM_MESSAGE" | translate }}</mat-label>
+          <textarea
+            type="text"
+            matInput
+            name="message"
+            class="form-control"
+            ngModel
+            rows="10"
+            #message="ngModel"
+            required
+          ></textarea>
+        </mat-form-field>
+        <button class="button-primary-dark" type="submit">
+          {{ "FORM_SEND" | translate }}
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

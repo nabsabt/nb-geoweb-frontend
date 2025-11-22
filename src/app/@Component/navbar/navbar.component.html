@@ -38,7 +38,18 @@
               class="button-navbar button-LANG"
               (click)="changeLanguage()"
             >
-              <p class="txt-md txt-font-bold p-0 m-0">
+              @switch (changeToLangValue) { @case ('hu') {
+              <img
+                src="assets/icon/HUN_flag.png"
+                style="width: 30px; height: 30px"
+              />
+              } @case ('en') {
+              <img
+                src="assets/icon/ENG_flag.png"
+                style="width: 30px; height: 30px"
+              />
+              } }
+              <p class="txt-md txt-font-bold p-0 mx-1">
                 {{ changeToLangValue | uppercase }}
               </p>
             </button>

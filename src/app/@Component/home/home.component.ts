@@ -4,6 +4,10 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { AboutSection } from '../sections/about/about.section';
+import { SkillsSection } from '../sections/skills/skills.section';
+import { ProjectsSection } from '../sections/projects/projects.section';
+import { ContactSection } from '../sections/contact/contact.section';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +20,10 @@ import { MatInputModule } from '@angular/material/input';
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
+    AboutSection,
+    SkillsSection,
+    ProjectsSection,
+    ContactSection,
   ],
   providers: [],
 })
@@ -37,7 +45,6 @@ export class HomeComponent implements OnInit {
 
   public jumpToSection(section: string): void {
     const element = document.getElementById(section);
-    console.log(element, section);
     if (element) {
       const yOffset = window.innerWidth < 701 ? 75 + 10 : 100 + 10; // Adjust offset for mobile view
       const y =
@@ -50,6 +57,4 @@ export class HomeComponent implements OnInit {
   public navigateToExternalPage(url: string) {
     window.open(url, '_blank');
   }
-
-  public onSubmitMessage(form: NgForm) {}
 }

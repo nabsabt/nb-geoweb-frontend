@@ -30,8 +30,6 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "baseHref": "/nb-geoweb-frontend/",
-            "deployUrl": "/nb-geoweb-frontend/",
             "assets": [
               {
                 "glob": "**/*",

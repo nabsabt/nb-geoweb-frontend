@@ -35,12 +35,15 @@
 
   "VACZICUTS_DESC": "A portfolio page of a hairdresser in Budapest",
   "KOLIAPP_DESC": "An administrative application for college students, to make life easier in dormitory.",
-  "GORSIUM_DESC": "A web map application for the Archeologic Park of Tác. Helps visitors in locating zones.",
+  "MIDDLE_EARTH_DESC": "A web map application of Middle Earth, from Tolkien's universe.",
 
   "FORM_NAME": "Name",
   "FORM_EMAIL": "E-mail",
   "FORM_MESSAGE": "Tell me your idea...",
   "FORM_SEND": "Send",
+  "FORM_REQUIRED": "Field is required!",
+  "FORM_MIN_CHAR": "Minimum characters: ",
+  "FORM_INVALID_INPUT": "Invalid e-mail format!",
 
   "CONTACT_SECTION_TITLE": "Get in touch",
   "CONTACT_SECTION_TEXT": "Already have a concept, just need a professional to help shape it? Got an idea, but not sure how to bring it to life? Get in touch through any of my contact channels or send me a message right away!"

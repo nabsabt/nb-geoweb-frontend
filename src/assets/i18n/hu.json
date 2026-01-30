@@ -35,12 +35,15 @@
 
   "VACZICUTS_DESC": "Budapesti fodrász portfólió oldala",
   "KOLIAPP_DESC": "Egy adminisztratív app, a kollégiumban lakó egyetemisták életét megkönnyítendő",
-  "GORSIUM_DESC": "Táci Gorsium Régészeti park webes térképi app-ja. A látogatók tájékozódását segítendő, fejlesztése folyamatban.",
+  "MIDDLE_EARTH_DESC": "Egy webes térképi alkalmazás Középföldéről, Tolkien világából.",
 
   "FORM_NAME": "Név",
   "FORM_EMAIL": "E-mail",
   "FORM_MESSAGE": "Na, halljuk azt az ötletet...",
   "FORM_SEND": "Küldés",
+  "FORM_REQUIRED": "A mező kitöltése kötelező!",
+  "FORM_MIN_CHAR": "Minimum karakter: ",
+  "FORM_INVALID_INPUT": "Helytelen e-mail formátum!",
 
   "CONTACT_SECTION_TITLE": "Kapcsolat",
   "CONTACT_SECTION_TEXT": "A konkrét tervek már az asztalon, csupán a szakmai egyeztetés van hátra? Felmerült egy ötlet, de a megvalósítás folyamata kérdéses? Lelkesen várom a megkeresést alábbi kapcsolataim bármelyikén, vagy akár azonnali üzenetben is!"

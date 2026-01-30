@@ -31,8 +31,8 @@
 
       <form
         class="message-form p-2"
-        (submit)="onSubmitMessage(inputForm)"
-        #inputForm="ngForm"
+        [formGroup]="form"
+        (ngSubmit)="onSubmitMessage()"
       >
         <mat-form-field class="form-field">
           <mat-label>{{ "FORM_NAME" | translate }}</mat-label>
@@ -40,11 +40,19 @@
             type="text"
             matInput
             name="name"
-            class="form-control"
-            ngModel
-            #name="ngModel"
-            required
+            class="formfield form-control"
+            formControlName="name"
           />
+          @if (name?.invalid && (name?.dirty || name?.touched)) {
+            @if (name?.hasError("required")) {
+              <em class="formfield-error">{{ "FORM_REQUIRED" | translate }}</em>
+            }
+            @if (name?.hasError("minlength")) {
+              <em class="formfield-error"
+                >{{ "FORM_MIN_CHAR" | translate }} 3</em
+              >
+            }
+          }
         </mat-form-field>
 
         <mat-form-field class="form-field">
@@ -53,11 +61,19 @@
             type="text"
             matInput
             name="email"
-            class="form-control"
-            ngModel
-            #email="ngModel"
-            required
+            class="formfield form-control"
+            formControlName="email"
           />
+          @if (email?.invalid && (email?.dirty || email?.touched)) {
+            @if (email?.hasError("required")) {
+              <em class="formfield-error">{{ "FORM_REQUIRED" | translate }}</em>
+            }
+            @if (email?.hasError("email")) {
+              <em class="formfield-error"
+                >{{ "FORM_INVALID_INPUT" | translate }} 3</em
+              >
+            }
+          }
         </mat-form-field>
 
         <mat-form-field class="form-field">
@@ -66,14 +82,27 @@
             type="text"
             matInput
             name="message"
-            class="form-control"
-            ngModel
-            rows="10"
-            #message="ngModel"
-            required
+            class="formfield form-control"
+            formControlName="message"
+            rows="7"
           ></textarea>
+          @if (message?.invalid && (message?.dirty || message?.touched)) {
+            @if (message?.hasError("required")) {
+              <em class="formfield-error">{{ "FORM_REQUIRED" | translate }}</em>
+            }
+            @if (message?.hasError("minlength")) {
+              <em class="formfield-error"
+                >{{ "FORM_MIN_CHAR" | translate }} 3</em
+              >
+            }
+          }
         </mat-form-field>
-        <button class="button-primary-dark" type="submit">
+        <button
+          [disabled]="form.invalid || isLoading()"
+          [style.opacity]="form.invalid ? 0.3 : 1"
+          class="button-primary-dark"
+          type="submit"
+        >
           {{ "FORM_SEND" | translate }}
         </button>
       </form>

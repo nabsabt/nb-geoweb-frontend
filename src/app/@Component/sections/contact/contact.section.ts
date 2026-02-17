@@ -8,7 +8,9 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { Observable, Subscription } from 'rxjs';
+import { MatSnackBarModule, MatSnackBar } from '@angular/material/snack-bar';
+
+import { Subscription } from 'rxjs';
 import { FeedbackMailService } from '../../../@Service/mail.service';
 
 @Component({
@@ -19,6 +21,7 @@ import { FeedbackMailService } from '../../../@Service/mail.service';
     TranslateModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSnackBarModule,
     ReactiveFormsModule,
   ],
 })
@@ -26,7 +29,10 @@ export class ContactSection implements OnDestroy {
   private SendMailSub: Subscription;
 
   private mailservice = inject(FeedbackMailService);
-  constructor(private translateService: TranslateService) {
+  constructor(
+    private translateService: TranslateService,
+    private snackBar: MatSnackBar,
+  ) {
     translateService.setDefaultLang('en');
     translateService.use('en');
   }
@@ -68,22 +74,26 @@ export class ContactSection implements OnDestroy {
     try {
       const { message, email, name } = this.form.value;
       await this.mailservice.send(message!, email!, name!);
-    } catch (error) {
-      alert(
-        this.translateService.currentLang === 'hu'
-          ? 'Hiba történt az üzenet küldésekor! Kérem, próbálkozzon később!'
-          : 'Some error occured during message processing. Please, try again later!',
-      );
-      this.isLoading.set(false);
-    } finally {
-      alert(
+      this.snackBar.open(
         this.translateService.currentLang === 'hu'
           ? 'Üzenet elküldve! Köszönöm érdeklődését, hamarosan visszajelzek!'
           : 'Message sent! Thank you for contacting me, I will reply soon!',
+        '',
+        { duration: 5000, panelClass: 'snackbar-success' },
       );
       this.form.reset();
       this.isMessageSent.set(true);
       this.isLoading.set(false);
+    } catch (error) {
+      this.snackBar.open(
+        this.translateService.currentLang === 'hu'
+          ? 'Hiba történt az üzenet küldésekor! Kérem, próbálkozzon később!'
+          : 'Some error occured during message processing. Please, try again later!',
+        '',
+        { duration: 5000, panelClass: 'snackbar-error' },
+      );
+      this.isLoading.set(false);
+      this.form.reset();
     }
     return;
   }
@@ -91,7 +101,4 @@ export class ContactSection implements OnDestroy {
   ngOnDestroy(): void {
     this.SendMailSub?.unsubscribe();
   }
-}
-function toSignal(arg0: Observable<unknown>, arg1: { initialValue: 'EN' }) {
-  throw new Error('Function not implemented.');
 }

@@ -27,6 +27,8 @@ body {
   --NB-grey: #f9f9fa;
   --NB-darker-grey: #e5e5e7;
   --NB-black: #030213;
+  --NB-error: #641e1e;
+  --NB-success: #095c14;
   --NB-lighter-black: #3a3948;
 
   /* Font */
@@ -197,6 +199,15 @@ body {
   background-color: var(--NB-darker-grey);
   color: var(--NB-black);
   border-radius: 10px;
+}
+
+.snackbar-error {
+  background-color: var(--NB-error);
+  color: var(--NB-white);
+}
+.snackbar-success {
+  background-color: var(--NB-success);
+  color: var(--NB-white);
 }
 
 /* DESKTOP VIEW */

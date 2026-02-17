@@ -98,12 +98,20 @@
           }
         </mat-form-field>
         <button
-          [disabled]="form.invalid || isLoading()"
+          [disabled]="form.invalid || isLoading() || isMessageSent()"
           [style.opacity]="form.invalid ? 0.3 : 1"
           class="button-primary-dark"
           type="submit"
         >
-          {{ "FORM_SEND" | translate }}
+          @if (isLoading()) {
+            {{ "FORM_SENDING" | translate }}
+          }
+          @if (isMessageSent()) {
+            {{ "FORM_SENT" | translate }}
+          }
+          @if (!isLoading() && !isMessageSent()) {
+            {{ "FORM_SEND" | translate }}
+          }
         </button>
       </form>
     </div>

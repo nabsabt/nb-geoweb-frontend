@@ -32,6 +32,8 @@ export class ContactSection implements OnDestroy {
   }
 
   public isLoading = signal<boolean>(false);
+  public isMessageSent = signal<boolean>(false);
+
   public form = new FormGroup({
     name: new FormControl({ value: '', disabled: this.isLoading() }, [
       Validators.required,
@@ -80,6 +82,7 @@ export class ContactSection implements OnDestroy {
           : 'Message sent! Thank you for contacting me, I will reply soon!',
       );
       this.form.reset();
+      this.isMessageSent.set(true);
       this.isLoading.set(false);
     }
     return;

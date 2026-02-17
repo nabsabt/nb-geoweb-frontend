@@ -41,6 +41,8 @@
   "FORM_EMAIL": "E-mail",
   "FORM_MESSAGE": "Tell me your idea...",
   "FORM_SEND": "Send",
+  "FORM_SENDING": "Sending...",
+  "FORM_SENT": "Message sent!",
   "FORM_REQUIRED": "Field is required!",
   "FORM_MIN_CHAR": "Minimum characters: ",
   "FORM_INVALID_INPUT": "Invalid e-mail format!",

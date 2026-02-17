@@ -41,6 +41,8 @@
   "FORM_EMAIL": "E-mail",
   "FORM_MESSAGE": "Na, halljuk azt az ötletet...",
   "FORM_SEND": "Küldés",
+  "FORM_SENDING": "Küldés folyamatban...",
+  "FORM_SENT": "Üzenet elküldve!",
   "FORM_REQUIRED": "A mező kitöltése kötelező!",
   "FORM_MIN_CHAR": "Minimum karakter: ",
   "FORM_INVALID_INPUT": "Helytelen e-mail formátum!",

@@ -5,6 +5,8 @@
   "CONTACT_BUTTON": "Kapcsolat",
   "HERO_SECTION_TITLE": "EGYEDI WEBLAPOK, EGYEDI MEGOLDÁS",
   "HERO_SECTION_SUBTITLE": "Gyors, modern, személyre szabott",
+  "HERO_SECTION_WHAT_I_KNOW_BUTTON": "Így dolgozom",
+  "HERO_SECTION_CONTACT_ME_BUTTON": "Keress meg",
 
   "ABOUT_SECTION_TITLE": "Rólam",
   "ABOUT_SECTION_TEXT": "Több éves webfejlesztési tapasztalattal rendelkezem, és hiszek abban, hogy minden ügyfél számára egyedi megoldásokat tudok kínálni. Fő profilom a webes térképi applikációk fejlesztése, így nem csak egyedi weboldalak készítését, de térbeli adatok webes környezetben való vizualizálását is vállalom.",
@@ -23,15 +25,24 @@
 
   "PROJECT_CHECK_BUTTON_TEXT": "Megnézem",
 
-  "SKILLS_SECTION_TITLE": "Eszköztár",
+  "SKILLS_SECTION_TITLE": "Milyen eszközökkel dolgozom?",
   "SKILLS_SECTION_TEXT": "Az alábbi keretrendszereket és technológiákat alkalmazom napi rendszerességgel.",
 
   "SKILLS_FRONTEND": "Kliensoldal",
+  "SKILLS_FRONTEND_DESC": "Hogy weboldalad modern, letisztult, dinamikus és látványos legyen, a Te igényeidre szabva. A kliensed első benyomása a legfontosabb, tegyünk érte, hogy ez a lehető legjobb legyen!",
   "SKILLS_BACKEND": "Szerveroldal",
+  "SKILLS_BACKEND_DESC": "A motortérben is valódi munka zajlik! Garantálom ennek hatékonyságát, akármekkora adatmennyiséggel, erőforrással is számolunk.",
   "SKILLS_TOOLS_OTHERS": "Egyéb eszközök",
+  "SKILLS_TOOLS_OTHERS_DESC": "Dizájn megtervezés, architektúra kiépítés, térbeli adatszerkesztés, minden egyéb, amire szűkséged lehet. Legyen szó bármiről, egy projekt teljes életciklusáért felelek.",
+  "SKILLSET": "Eszköztáram...",
 
-  "PROJECTS_SECTION_TITLE": "Referenciák",
-  "PROJECTS_SECTION_SUBTITLE": "Alább néhány, nyilvánosan is elérhető projektem tekinthető meg.",
+  "PROJECTS_SECTION_TITLE": "Ellátogatnál Középföldére?",
+  "PROJECTS_SECTION_SUBTITLE": "Vess egy pillantást egyik kedvenc webes, interaktív térképi oldalamra!",
+  "PROJECT_SECTION_CHAT": "Chat-elj legendás karakterekkel, mint Gandalf, vagy Gollam",
+  "PROJECT_SECTION_KNOWLEDGEBASE": "Merülj el Középfölde királyságainak történelmében",
+  "PROJECT_SECTION_QUIZ": "Tesztelt tudásod 3 különböző szintű kvízben",
+  "PROJECT_SECTION_EXPLORE": "Fedezz fel neves helyszíneket Tolkien világából",
+  "PROJECT_SECTION_URL": "Katt ide az utazáshoz Középföldére",
 
   "VACZICUTS_DESC": "Budapesti fodrász portfólió oldala",
   "KOLIAPP_DESC": "Egy adminisztratív app, a kollégiumban lakó egyetemisták életét megkönnyítendő",

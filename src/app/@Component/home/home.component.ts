@@ -1,5 +1,5 @@
 import { Component, OnInit, signal } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -8,6 +8,7 @@ import { AboutSection } from '../sections/about/about.section';
 import { SkillsSection } from '../sections/skills/skills.section';
 import { ProjectsSection } from '../sections/projects/projects.section';
 import { ContactSection } from '../sections/contact/contact.section';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -24,15 +25,17 @@ import { ContactSection } from '../sections/contact/contact.section';
     SkillsSection,
     ProjectsSection,
     ContactSection,
+    CommonModule,
   ],
   providers: [],
 })
 export class HomeComponent implements OnInit {
   public subtitleText = signal<string[]>(['']);
+  public heroBgImgClass = signal<string>('');
 
   constructor(
     private translateService: TranslateService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
   ) {
     translateService.setDefaultLang('en');
     translateService.use('en');
@@ -54,6 +57,10 @@ export class HomeComponent implements OnInit {
     }
   }
 
+  public onHeroBgImgLoaded() {
+    console.log('image loaded');
+    this.heroBgImgClass.set('img-visible');
+  }
   public navigateToExternalPage(url: string) {
     window.open(url, '_blank');
   }

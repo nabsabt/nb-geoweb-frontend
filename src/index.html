@@ -6,48 +6,10 @@
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="logo_nb.ico" />
-    <style>
-      .hero-bg {
-        position: relative;
-        overflow: hidden;
-        background: linear-gradient(
-          to bottom,
-          var(--NB-darker-grey) 0%,
-          rgba(255, 255, 255, 0) 10%
-        );
-      }
-
-      /* Image layer */
-      .hero-bg::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-
-        background-image: url("assets/img/hero-section-bg-light.jpg");
-        background-size: cover;
-        background-position: center;
-
-        opacity: 0;
-        animation: fadeInBg 1.5s ease-in forwards;
-
-        z-index: -1;
-      }
-
-      @keyframes fadeInBg {
-        /*  to {
-          opacity: 1;
-        } */
-        0% {
-          opacity: 0;
-        }
-        30% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    </style>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <app-root></app-root>

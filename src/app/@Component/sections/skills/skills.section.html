@@ -3,42 +3,114 @@
     <p class="txt-black txt-font-medium txt-lg">
       {{ "SKILLS_SECTION_TITLE" | translate }}
     </p>
-    <p class="txt-lighter-black txt-font-light txt-md">
-      {{ "SKILLS_SECTION_TEXT" | translate }}
-    </p>
     <div class="cards-container">
       <div class="card">
-        <p>{{ "SKILLS_FRONTEND" | translate }}</p>
-        <div class="badges">
-          <p class="badge">Angular</p>
-          <p class="badge">HTML</p>
-          <p class="badge">CSS</p>
-          <p class="badge">React</p>
-          <p class="badge">Angular Material</p>
-          <p class="badge">Bootstrap</p>
-          <p class="badge">MapLibre</p>
+        <div class="desc-section">
+          <div class="text-section">
+            <strong>{{ "SKILLS_FRONTEND" | translate }}</strong>
+            <em>{{ "SKILLS_FRONTEND_DESC" | translate }}</em>
+          </div>
+          <div class="figure-section">
+            <img src="assets/img/skillsec_1.png" />
+          </div>
         </div>
+
+        <mat-expansion-panel
+          (opened)="frontendPanelOpen.set(true)"
+          (closed)="frontendPanelOpen.set(false)"
+        >
+          <mat-expansion-panel-header>
+            @if (!frontendPanelOpen()) {
+              <em>{{ "SKILLSET" | translate }}</em>
+            }
+          </mat-expansion-panel-header>
+
+          <div class="badges">
+            <p class="badge">Angular</p>
+            <p class="badge">HTML</p>
+            <p class="badge">CSS</p>
+            <p class="badge">SCSS</p>
+            <p class="badge">React</p>
+            <p class="badge">MUI</p>
+            <p class="badge">Angular Material</p>
+            <p class="badge">Bootstrap</p>
+            <p class="badge">Tailwind</p>
+            <p class="badge">MapLibre</p>
+            <p class="badge">PhotoSwipe</p>
+            <p class="badge">SEO</p>
+          </div>
+        </mat-expansion-panel>
       </div>
 
       <div class="card">
-        <p>{{ "SKILLS_BACKEND" | translate }}</p>
-        <div class="badges">
-          <p class="badge">NodeJS</p>
-          <p class="badge">NestJS</p>
-          <p class="badge">MongoDB</p>
-          <p class="badge">PostgreSQL</p>
+        <div class="desc-section">
+          <div class="text-section">
+            <strong>{{ "SKILLS_BACKEND" | translate }}</strong>
+            <em>{{ "SKILLS_BACKEND_DESC" | translate }}</em>
+          </div>
+          <div class="figure-section">
+            <img src="assets/img/skillsec_2.png" />
+          </div>
         </div>
+
+        <mat-expansion-panel
+          (opened)="backendPanelOpen.set(true)"
+          (closed)="backendPanelOpen.set(false)"
+        >
+          <mat-expansion-panel-header>
+            @if (!backendPanelOpen()) {
+              <em>{{ "SKILLSET" | translate }}</em>
+            }
+          </mat-expansion-panel-header>
+          <div class="badges">
+            <p class="badge">NodeJS</p>
+            <p class="badge">NestJS</p>
+            <p class="badge">TypeORM</p>
+            <p class="badge">Express</p>
+            <p class="badge">MongoDB</p>
+            <p class="badge">PostgreSQL</p>
+            <p class="badge">Oracle</p>
+            <p class="badge">Redis</p>
+            <p class="badge">TileServer</p>
+            <p class="badge">OpenAI</p>
+            <p class="badge">API</p>
+            <p class="badge">Authentication</p>
+          </div>
+        </mat-expansion-panel>
       </div>
 
       <div class="card">
-        <p>{{ "SKILLS_TOOLS_OTHERS" | translate }}</p>
-        <div class="badges">
-          <p class="badge">QGIS</p>
-          <p class="badge">Docker</p>
-          <p class="badge">Figma</p>
-          <p class="badge">Adobe Photoshop</p>
-          <p class="badge">GitHub</p>
+        <div class="desc-section">
+          <div class="text-section">
+            <strong>{{ "SKILLS_TOOLS_OTHERS" | translate }}</strong>
+            <em>{{ "SKILLS_TOOLS_OTHERS_DESC" | translate }}</em>
+          </div>
+          <div class="figure-section">
+            <img src="assets/img/skillsec_3.png" />
+          </div>
         </div>
+
+        <mat-expansion-panel
+          (opened)="toolsPanelOpen.set(true)"
+          (closed)="toolsPanelOpen.set(false)"
+        >
+          <mat-expansion-panel-header>
+            @if (!toolsPanelOpen()) {
+              <em>{{ "SKILLSET" | translate }}</em>
+            }
+          </mat-expansion-panel-header>
+          <div class="badges">
+            <p class="badge">QGIS</p>
+            <p class="badge">Docker</p>
+            <p class="badge">Figma</p>
+            <p class="badge">FigJam</p>
+            <p class="badge">Adobe Photoshop</p>
+            <p class="badge">Inkspace</p>
+            <p class="badge">WSL</p>
+            <p class="badge">GitHub</p>
+            <p class="badge">Azure</p>
+          </div>
+        </mat-expansion-panel>
       </div>
     </div>
   </div>

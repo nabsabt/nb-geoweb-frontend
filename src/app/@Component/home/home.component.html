@@ -1,6 +1,13 @@
 <div class="home-container">
   <!--Hero section-->
   <div class="hero-section hero-bg section">
+    <img
+      [ngClass]="heroBgImgClass()"
+      loading="lazy"
+      sizes="auto"
+      src="/assets/img/hero-section-bg-light.jpg"
+      (load)="onHeroBgImgLoaded()"
+    />
     <div class="card">
       <!--Text Area (title+subtitle)-->
       <div class="text-area">
@@ -15,14 +22,14 @@
       <!--Action Area (nav to fragments + SM icons)-->
       <div class="action-area">
         <div class="buttons">
-          <a [routerLink]="['']" fragment="Projects">
+          <a [routerLink]="['']" fragment="Skills">
             <button class="button-primary-dark">
-              {{ "PROJECTS_BUTTON" | translate }}
+              {{ "HERO_SECTION_WHAT_I_KNOW_BUTTON" | translate }}
             </button>
           </a>
           <a [routerLink]="['']" fragment="Contact">
             <button class="button-primary-light">
-              {{ "CONTACT_BUTTON" | translate }}
+              {{ "HERO_SECTION_CONTACT_ME_BUTTON" | translate }}
             </button>
           </a>
         </div>

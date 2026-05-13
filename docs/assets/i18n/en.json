@@ -5,6 +5,8 @@
   "CONTACT_BUTTON": "Contact",
   "HERO_SECTION_TITLE": "CUSTOM WEBSITES THAT WORK",
   "HERO_SECTION_SUBTITLE": "Fast, modern, built for you",
+  "HERO_SECTION_WHAT_I_KNOW_BUTTON": "What I know",
+  "HERO_SECTION_CONTACT_ME_BUTTON": "Get in touch",
 
   "ABOUT_SECTION_TITLE": "About me",
   "ABOUT_SECTION_TEXT": "I have several years of experience in web development, and I believe in providing tailored solutions for every client. My main focus is developing web-based mapping applications, so I offer not only custom website development but also the visualization of spatial data in a web environment.",
@@ -23,15 +25,24 @@
 
   "PROJECT_CHECK_BUTTON_TEXT": "Check",
 
-  "SKILLS_SECTION_TITLE": "Skills",
+  "SKILLS_SECTION_TITLE": "What tools I work with?",
   "SKILLS_SECTION_TEXT": "A comprehensive toolkit of modern technologies and frameworks I use to build amazing web applications.",
 
-  "SKILLS_FRONTEND": "Frontend",
-  "SKILLS_BACKEND": "Backend",
+  "SKILLS_FRONTEND": "Client side",
+  "SKILLS_FRONTEND_DESC": "To make your website modern, smooth, dynamic, tailored for Your needs. Because your client's first impression is the most important. Satisfy it!",
+  "SKILLS_BACKEND": "Server side",
+  "SKILLS_BACKEND_DESC": "What is under the hood, must work effectively! I make sure it does, no matter, how much data your organization works with.",
   "SKILLS_TOOLS_OTHERS": "Tools & Others",
+  "SKILLS_TOOLS_OTHERS_DESC": "Design and architecture planning, spatial data manipulation, everything else you need. I am responsible for the entire life cycle of a project",
+  "SKILLSET": "Check skills...",
 
-  "PROJECTS_SECTION_TITLE": "Projects",
-  "PROJECTS_SECTION_SUBTITLE": "Feel free to take a look at some of my notable, publicly available projects.",
+  "PROJECTS_SECTION_TITLE": "Want to visit to Middle Earth?",
+  "PROJECTS_SECTION_SUBTITLE": "Take a look at one of my favourite, interactive web map projects!",
+  "PROJECT_SECTION_CHAT": "Chat with legendary characters like Gandalf or Gollum",
+  "PROJECT_SECTION_KNOWLEDGEBASE": "Explore the history of Middle-earth’s ancient kingdoms",
+  "PROJECT_SECTION_QUIZ": "Test your knowledge with interactive lore quizzes",
+  "PROJECT_SECTION_EXPLORE": "Discover iconic locations across the world of Tolkien",
+  "PROJECT_SECTION_URL": "See the full Middle-earth experience",
 
   "VACZICUTS_DESC": "A portfolio page of a hairdresser in Budapest",
   "KOLIAPP_DESC": "An administrative application for college students, to make life easier in dormitory.",

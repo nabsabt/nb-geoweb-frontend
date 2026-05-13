@@ -5,98 +5,53 @@
   <p class="txt-lighter-black txt-font-light txt-md">
     {{ "PROJECTS_SECTION_SUBTITLE" | translate }}
   </p>
-  <div class="project-cards">
-    <!--Middle Earth-->
-    <div class="project-card">
-      <div class="project-img-container">
-        <img src="assets/img/PROJ_middleearth.jpg" />
-      </div>
-      <div class="title">
-        <p class="txt-black txt-font-medium txt-md">Middle-Earth Map</p>
-      </div>
 
-      <div class="text">
-        <p class="txt-black txt-font-light txt-sm">
-          {{ "MIDDLE_EARTH_DESC" | translate }}
-        </p>
-      </div>
-      <div class="badges">
-        <p class="badge">Angular</p>
-        <p class="badge">Docker</p>
-        <p class="badge">MapLibre</p>
-        <p class="badge">NestJS</p>
-        <p class="badge">MongoDB</p>
-        <p class="badge">NodeJS</p>
-        <p class="badge">Figma</p>
-        <p class="badge">QGIS</p>
-        <p class="badge">OpenAI</p>
-      </div>
-      <div class="button-div">
-        <a href="https://middleearthmap.eu/" target="_blank">
-          <button class="button-primary-dark">
-            {{ "PROJECT_CHECK_BUTTON_TEXT" | translate }} ►
-          </button>
-        </a>
-      </div>
-    </div>
-    <!--VácziCuts-->
-    <div class="project-card">
-      <div class="project-img-container">
-        <img src="assets/img/PROJ_vaczicuts.jpg" />
-      </div>
-      <div class="title">
-        <p class="txt-black txt-font-medium txt-md">Váczi Cuts</p>
-      </div>
-
-      <div class="text">
-        <p class="txt-black txt-font-light txt-sm">
-          {{ "VACZICUTS_DESC" | translate }}
-        </p>
-      </div>
-      <div class="badges">
-        <p class="badge">Angular</p>
-        <p class="badge">Bootstrap</p>
-        <p class="badge">Figma</p>
-        <p class="badge">Render</p>
-      </div>
-      <div class="button-div">
-        <a href="https://vaczicuts.hu/" target="_blank"
-          ><button class="button-primary-dark">
-            {{ "PROJECT_CHECK_BUTTON_TEXT" | translate }} ►
-          </button></a
-        >
-      </div>
+  <div class="middle-earth-project-section">
+    <!--MAP content-->
+    <div #map id="map" class="map-content">
+      @if (onZoomDetected()) {
+        <div class="map-zoom-guide">
+          <h3>{{ onZoomDetected() }}</h3>
+        </div>
+      }
+      @if (!isMapLoaded()) {
+        <div class="map-content-loading">
+          <h1>Map is loading...</h1>
+        </div>
+      }
     </div>
 
-    <!--Koliapp-->
-    <div class="project-card">
-      <div class="project-img-container">
-        <img src="assets/img/PROJ_koliapp.jpg" />
-      </div>
-      <div class="title">
-        <p class="txt-black txt-font-medium txt-md">Koliapp</p>
+    <!--Description content-->
+    <div class="middle-earth-features">
+      <div class="feature">
+        <mat-icon>chat</mat-icon>
+        <p>{{ "PROJECT_SECTION_CHAT" | translate }}</p>
       </div>
 
-      <div class="text">
-        <p class="txt-black txt-font-light txt-sm">
-          {{ "KOLIAPP_DESC" | translate }}
+      <div class="feature">
+        <mat-icon>library_books</mat-icon>
+        <p>
+          {{ "PROJECT_SECTION_KNOWLEDGEBASE" | translate }}
         </p>
       </div>
-      <div class="badges">
-        <p class="badge">Angular</p>
-        <p class="badge">Bootstrap</p>
-        <p class="badge">Figma</p>
-        <p class="badge">NestJS</p>
-        <p class="badge">MongoDB</p>
-        <p class="badge">NodeJS</p>
+
+      <div class="feature">
+        <mat-icon>device_unknown</mat-icon>
+        <p>
+          {{ "PROJECT_SECTION_QUIZ" | translate }}
+        </p>
       </div>
-      <div class="button-div">
-        <a href="https://koliapp-frontend.onrender.com/" target="_blank"
-          ><button class="button-primary-dark">
-            {{ "PROJECT_CHECK_BUTTON_TEXT" | translate }} ►
-          </button></a
-        >
+
+      <div class="feature">
+        <mat-icon> map</mat-icon>
+        <p>
+          {{ "PROJECT_SECTION_EXPLORE" | translate }}
+        </p>
       </div>
+
+      <a href="https://middleearthmap.eu/" target="_blank">
+        {{ "PROJECT_SECTION_URL" | translate }} →
+      </a>
     </div>
   </div>
 </div>

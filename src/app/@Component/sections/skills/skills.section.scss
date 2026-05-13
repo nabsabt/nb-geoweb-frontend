@@ -19,7 +19,6 @@
         margin: 1rem;
         min-height: 200px;
         min-width: 230px;
-        width: 60%;
         padding: 2rem;
         display: flex;
         flex-wrap: wrap;
@@ -68,6 +67,7 @@
     min-height: calc(100vh - var(--desktop-navbar-height));
     height: fit-content;
     .card {
+      width: 60%;
       .desc-section {
         display: flex;
         flex-direction: row;
@@ -97,6 +97,9 @@
 /* MOBILE VIEW */
 @media only screen and (max-width: 700px) {
   .skills-section {
+    .card {
+      width: 90dvw;
+    }
     min-height: calc(100vh - var(--mobile-navbar-height));
     height: fit-content;
     mat-expansion-panel {

@@ -43,6 +43,7 @@ export class ProjectsSection implements OnInit, OnDestroy, AfterViewInit {
       maplibreLogo: false,
       attributionControl: false,
       scrollZoom: false,
+      dragRotate: false,
     });
   }
 
